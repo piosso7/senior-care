@@ -215,6 +215,9 @@ nav button {
   text-decoration: none;
   color: black;
 }
+.footer .wrapper .linksContainer .quickLinks .miniLayout ul li .miniLink:hover {
+  color: #028a0f;
+}
 .footer .wrapper .linksContainer .legalLinks {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
