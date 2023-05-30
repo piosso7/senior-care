@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import Logo from "../pictures/LogoCareHome.svg";
 
 const Layout = () => {
@@ -8,29 +8,29 @@ const Layout = () => {
         <img src={Logo} alt="Logo"></img>
         <ul>
           <li>
-            <Link className="link" to="/">
+            <NavLink className="link" to="/">
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="link" to="/about-us">
+            <NavLink className="link" to="/about-us">
               About Us
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="link" to="/services">
+            <NavLink className="link" to="/services">
               Services
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="link" to="/amenities">
+            <NavLink className="link" to="/amenities">
               Amenities
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="link" to="/cost-&-payment">
+            <NavLink className="link" to="/cost-&-payment">
               Cost & Payment
-            </Link>
+            </NavLink>
           </li>
         </ul>
         <button>Contact Us</button>

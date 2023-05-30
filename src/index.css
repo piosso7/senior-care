@@ -7,8 +7,10 @@
 }
 
 body {
+  font-family: "Raleway";
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
+  width: 90vw;
   height: 100px;
 }
 body div {
@@ -29,7 +31,7 @@ body div {
 }
 
 nav {
-  width: 100%;
+  width: 90%;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,7 +63,7 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60%;
+  width: 50%;
 }
 nav ul li {
   list-style: none;
@@ -70,15 +72,16 @@ nav ul li .link {
   font-size: 16px;
   text-decoration: none;
   color: black;
-  font-family: "Raleway";
+}
+nav ul li .link.active {
+  color: #028a0f;
 }
 nav ul li .link:hover {
-  color: #028A0F;
+  color: #028a0f;
 }
 nav button {
-  font-family: "Raleway";
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,5 +99,137 @@ nav button {
   border: none;
   width: 124px;
   height: 43px;
-  background: linear-gradient(135deg, #028A0F 0%, #90D296 100%);
+  background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
+}
+
+.footer {
+  width: 100%;
+  height: 500px;
+  background-color: #f3fbf4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer .wrapper {
+  height: 80%;
+  width: 90%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .wrapper .descriptionContainer {
+  width: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .wrapper .descriptionContainer .footerLogo {
+  width: 200px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+.footer .wrapper .descriptionContainer p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.footer .wrapper .descriptionContainer .social {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.footer .wrapper .descriptionContainer .social img {
+  width: 24px;
+  margin-right: 24px;
+}
+.footer .wrapper .linksContainer {
+  width: 30%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.footer .wrapper .linksContainer .quickLinks {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer .wrapper .linksContainer .quickLinks h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.footer .wrapper .linksContainer .quickLinks .miniLayout {
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer .wrapper .linksContainer .quickLinks .miniLayout ul {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.footer .wrapper .linksContainer .quickLinks .miniLayout ul li {
+  margin-bottom: 24px;
+}
+.footer .wrapper .linksContainer .quickLinks .miniLayout ul li .miniLink {
+  text-decoration: none;
+  color: black;
+}
+.footer .wrapper .linksContainer .legalLinks {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.footer .wrapper .linksContainer .legalLinks h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.footer .wrapper .linksContainer .legalLinks a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 24px;
 }/*# sourceMappingURL=index.css.map */
