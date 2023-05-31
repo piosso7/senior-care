@@ -1,12 +1,23 @@
+$colorGreen: #028a0f;
+
 @mixin h1 {
   font-size: 80px;
   font-size: bold;
   color: #ffffff;
 }
 
+@mixin h2 {
+  font-size: 48px;
+  font-size: bold;
+}
+
 @mixin pWhite {
   font-size: 18px;
   color: #ffffff;
+}
+@mixin pGray {
+  font-size: 18px;
+  color: #848484;
 }
 
 @mixin h3Footer {
@@ -15,7 +26,7 @@
 }
 
 @mixin colorHoverGreen {
-  color: #028a0f;
+  color: $colorGreen;
 }
 
 @mixin button {
