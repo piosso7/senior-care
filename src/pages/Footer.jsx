@@ -25,11 +25,11 @@ const Fotter = () => {
           </div>
           <div className="linksContainer">
             <div className="quickLinks">
-              <h1>Quick Links</h1>
+              <h3>Quick Links</h3>
               <MiniLayout />
             </div>
             <div className="legalLinks">
-              <h1>Legal</h1>
+              <h3>Legal</h3>
               <a href="#">Terms of Service</a>
               <a href="#">Privacy Policy</a>
             </div>

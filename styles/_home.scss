@@ -1,0 +1,26 @@
+@use "./standardElements";
+.header {
+  width: 100%;
+  height: 700px;
+  background-image: url("../src/pictures/home/homeBaner.png");
+  background-position: center;
+  .headerDescription {
+    height: 100%;
+    align-items: start;
+    width: 50%;
+    margin-left: 6%;
+    h1 {
+      @include standardElements.h1;
+    }
+    p {
+      @include standardElements.pWhite;
+      margin-bottom: 20px;
+    }
+    button {
+      @include standardElements.button;
+    }
+    button:hover {
+      @include standardElements.buttonHover;
+    }
+  }
+}

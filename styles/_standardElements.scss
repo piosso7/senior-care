@@ -1,0 +1,37 @@
+@mixin h1 {
+  font-size: 80px;
+  font-size: bold;
+  color: #ffffff;
+}
+
+@mixin pWhite {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+@mixin h3Footer {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+@mixin colorHoverGreen {
+  color: #028a0f;
+}
+
+@mixin button {
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  padding: 0 25px;
+  height: 43px;
+  background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
+}
+
+@mixin buttonHover {
+  background: linear-gradient(135deg, #90d296 0%, #028a0f 100%);
+}

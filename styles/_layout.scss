@@ -1,3 +1,5 @@
+@use "./standardElements";
+
 nav {
   width: 90%;
   height: 100px;
@@ -20,26 +22,20 @@ nav {
         font-size: 16px;
         text-decoration: none;
         color: black;
+        margin: 0 5px;
       }
       .link.active {
-        color: #028a0f;
+        @include standardElements.colorHoverGreen;
       }
       .link:hover {
-        color: #028a0f;
+        @include standardElements.colorHoverGreen;
       }
     }
   }
   button {
-    font-size: 16px;
-    color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border: none;
-    width: 124px;
-    height: 43px;
-    background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
+    @include standardElements.button;
+  }
+  button:hover {
+    @include standardElements.buttonHover;
   }
 }
