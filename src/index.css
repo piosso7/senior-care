@@ -295,6 +295,7 @@ nav button:hover {
 .shortAboutUs {
   width: 90%;
   height: 700px;
+  margin-bottom: 120px;
 }
 .shortAboutUs .wrapper {
   width: 100%;
@@ -353,4 +354,72 @@ nav button:hover {
 .shortAboutUs .wrapper .descriptionWrapper .aboutUsListEl img {
   margin-bottom: 20px;
   margin-right: 10px;
+}
+
+.shortOurServices {
+  height: 700px;
+  width: 90%;
+  margin-bottom: 120px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.shortOurServices h2 {
+  font-size: 48px;
+  font-size: bold;
+  text-align: center;
+  height: 15%;
+}
+.shortOurServices .carts {
+  width: 100%;
+  height: 85%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.shortOurServices .carts .card {
+  background-color: #fff;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  width: 45%;
+  height: 42%;
+  padding: 2%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.shortOurServices .carts .card img {
+  height: 45px;
+  margin-bottom: 20px;
+}
+.shortOurServices .carts .card h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.shortOurServices .carts .card p {
+  font-size: 18px;
+  color: #848484;
+}
+.shortOurServices .carts .card:hover {
+  -webkit-box-shadow: 4px 4px 50px #848484;
+          box-shadow: 4px 4px 50px #848484;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }/*# sourceMappingURL=index.css.map */
