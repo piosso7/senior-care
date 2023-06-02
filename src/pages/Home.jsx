@@ -6,7 +6,9 @@ import osCare from "../pictures/home/osCare.svg";
 import osNutrition from "../pictures/home/osNutrition.svg";
 import osNursing from "../pictures/home/osNursing.svg";
 import osStaff from "../pictures/home/osStaff.svg";
+import clientAvatar1 from "../pictures/home/clientAvatar1.png";
 
+//Single About Us list element function
 function AboutUsListEl(props) {
   return (
     <div className="aboutUsListEl">
@@ -16,12 +18,29 @@ function AboutUsListEl(props) {
   );
 }
 
+//Single Our Services Car function
 function OurServicesCard(props) {
   return (
     <div className="card">
       <img src={props.img} alt="Our Services Card Logo" />
       <h3>{props.title}</h3>
       <p>{props.description}</p>
+    </div>
+  );
+}
+
+//Single client review function
+function ClientReview(props) {
+  return (
+    <div className="clientReview">
+      <p className="clientRevievDescription">{props.description}</p>
+      <div className="clientInfo">
+        <img src={props.avatar} alt="Client Avatar" />
+        <div className="userName">
+          <h3>{props.name}</h3>
+          <p>{props.company}</p>
+        </div>
+      </div>
     </div>
   );
 }
@@ -83,6 +102,15 @@ const Home = () => {
             description="Lorem ipsum dolor sit amet consectetur. Augue non malesuada placerat faucibus nam purus sem. Urna pulvinar porttitor dignissim congue pellentesque ac hac. "
           />
         </div>
+      </section>
+      <section className="clientReviews">
+        <h2>Client Reviews</h2>
+        <ClientReview
+          description="Lorem ipsum dolor sit amet consectetur. Amet sed tellus elementum mauris. Libero maecenas eget tellus morbi diam enim euismod egestas. Adipiscing fringilla quis justo adipiscing eget aenean sollicitudin. Nibh ut sed sodales magna risus tellus. Nulla ut arcu ac justo blandit tincidunt ante. Tincidunt libero urna ut aliquet vitae nunc quisque sapien cursus."
+          avatar={clientAvatar1}
+          name="James Smith"
+          company="ABC Softwares"
+        />
       </section>
 
       <Fotter />
