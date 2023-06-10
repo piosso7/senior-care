@@ -1,4 +1,3 @@
-import Fotter from "./Footer";
 import CheckedIco from "../pictures/home/checked.svg";
 import homeAboutUs from "../pictures/home/homeAboutUs.png";
 
@@ -144,7 +143,6 @@ const Home = () => {
           <button>Call Today</button>
         </div>
       </section>
-      <Fotter />
     </>
   );
 };

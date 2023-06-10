@@ -9,6 +9,7 @@ import Services from "./pages/Services";
 import Amenities from "./pages/Amenities";
 import CostPayment from "./pages/CostPayment";
 import NoPage from "./pages/NoPage";
+import Fotter from "./pages/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,5 +24,6 @@ root.render(
         <Route path="*" element={<NoPage />} />
       </Route>
     </Routes>
+    <Fotter />
   </BrowserRouter>
 );
