@@ -308,7 +308,6 @@ nav button:hover {
 }
 
 .clientReviews {
-  height: 600px;
   width: 100%;
   margin-bottom: 120px;
   background-color: #f3fbf4;
@@ -320,7 +319,8 @@ nav button:hover {
 .clientReviews h2 {
   font-size: 48px;
   font-size: bold;
-  margin-bottom: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .clientReviews .clientReview {
   flex-direction: column;
@@ -338,6 +338,7 @@ nav button:hover {
   justify-content: center;
   align-items: center;
   width: auto;
+  margin-bottom: 100px;
 }
 .clientReviews .clientReview .clientInfo img {
   width: 60px;
