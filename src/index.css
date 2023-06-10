@@ -72,7 +72,8 @@ nav button:hover {
 
 .footer {
   width: 100%;
-  height: 500px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #f3fbf4;
   display: flex;
   flex-direction: column;
@@ -99,6 +100,7 @@ nav button:hover {
 .footer .wrapper .descriptionContainer p {
   font-size: 18px;
   margin-bottom: 20px;
+  line-height: 28px;
 }
 .footer .wrapper .descriptionContainer .social {
   flex-direction: row;
@@ -154,6 +156,12 @@ nav button:hover {
   color: black;
   margin-bottom: 24px;
 }
+.footer .wrapper .linksContainer .legalLinks a:hover {
+  color: #028a0f;
+}
+.footer .copyright {
+  margin-top: 100px;
+}
 
 .header {
   width: 100%;
@@ -176,6 +184,7 @@ nav button:hover {
 .header .headerDescription p {
   font-size: 18px;
   color: #ffffff;
+  line-height: 28px;
   margin-bottom: 20px;
 }
 .header .headerDescription button {
@@ -221,7 +230,7 @@ nav button:hover {
   width: 90%;
   height: 90%;
   position: absolute;
-  bottom: 0;
+  top: 10%;
   right: 0;
   border: solid 4px #028a0f;
 }
@@ -238,6 +247,7 @@ nav button:hover {
 .shortAboutUs .wrapper .descriptionWrapper p {
   font-size: 18px;
   color: #848484;
+  line-height: 28px;
   margin-bottom: 20px;
 }
 .shortAboutUs .wrapper .descriptionWrapper .aboutUsListEl {
@@ -250,7 +260,6 @@ nav button:hover {
 }
 
 .shortOurServices {
-  height: 700px;
   width: 90%;
   margin-bottom: 120px;
   flex-direction: column;
@@ -265,7 +274,6 @@ nav button:hover {
 }
 .shortOurServices .carts {
   width: 100%;
-  height: 85%;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -279,6 +287,7 @@ nav button:hover {
   height: 42%;
   padding: 2%;
   transition: 1s;
+  margin-bottom: 20px;
 }
 .shortOurServices .carts .card img {
   height: 45px;
@@ -291,6 +300,7 @@ nav button:hover {
 .shortOurServices .carts .card p {
   font-size: 18px;
   color: #848484;
+  line-height: 28px;
 }
 .shortOurServices .carts .card:hover {
   box-shadow: 4px 4px 50px #848484;
@@ -320,6 +330,7 @@ nav button:hover {
 .clientReviews .clientReview .clientRevievDescription {
   font-size: 18px;
   color: #848484;
+  line-height: 28px;
   margin-bottom: 50px;
 }
 .clientReviews .clientReview .clientInfo {
@@ -345,4 +356,97 @@ nav button:hover {
 .clientReviews .clientReview .clientInfo .userName p {
   font-size: 18px;
   color: #848484;
+  line-height: 28px;
+}
+
+.centerForYou {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  align-items: center;
+}
+.centerForYou img {
+  width: 50%;
+  height: 50%;
+}
+.centerForYou .description {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+}
+.centerForYou .description h2 {
+  font-size: 48px;
+  font-size: bold;
+  margin-bottom: 40px;
+}
+.centerForYou .description p {
+  font-size: 18px;
+  color: #848484;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+.centerForYou .description button {
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  padding: 0 25px;
+  height: 43px;
+  background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
+}
+
+.callBanner {
+  position: relative;
+  width: 90%;
+  margin-bottom: 120px;
+  background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
+  overflow: hidden;
+}
+.callBanner .paperAeroplane {
+  position: absolute;
+  height: 130px;
+  bottom: -20px;
+  right: 15px;
+}
+.callBanner .description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  margin: 5%;
+}
+.callBanner .description h2 {
+  font-size: 48px;
+  font-size: bold;
+  color: white;
+  margin-bottom: 30px;
+}
+.callBanner .description p {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+.callBanner .description button {
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  padding: 0 25px;
+  height: 43px;
+  background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
+  background: white;
+  color: black;
 }/*# sourceMappingURL=index.css.map */

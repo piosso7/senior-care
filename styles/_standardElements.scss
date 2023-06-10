@@ -15,10 +15,12 @@ $lightGreen: #f3fbf4;
 @mixin pWhite {
   font-size: 18px;
   color: #ffffff;
+  line-height: 28px;
 }
 @mixin pGray {
   font-size: 18px;
   color: #848484;
+  line-height: 28px;
 }
 
 @mixin h3Footer {

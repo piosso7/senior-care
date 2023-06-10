@@ -54,7 +54,7 @@
         width: 90%;
         height: 90%;
         position: absolute;
-        bottom: 0;
+        top: 10%;
         right: 0;
         border: solid 4px standardElements.$colorGreen;
       }
@@ -85,7 +85,6 @@
 
 //OUR SERVICES SECTION
 .shortOurServices {
-  height: 700px;
   width: 90%;
   margin-bottom: 120px;
   flex-direction: column;
@@ -98,7 +97,6 @@
   }
   .carts {
     width: 100%;
-    height: 85%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -112,6 +110,7 @@
       height: 42%;
       padding: 2%;
       transition: 1s;
+      margin-bottom: 20px;
       img {
         height: 45px;
         margin-bottom: 20px;
@@ -174,6 +173,74 @@
           @include standardElements.pGray;
         }
       }
+    }
+  }
+}
+
+// CENTER FOR YOU
+
+.centerForYou {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  align-items: center;
+  img {
+    width: 50%;
+    height: 50%;
+  }
+  .description {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    h2 {
+      @include standardElements.h2;
+      margin-bottom: 40px;
+    }
+    p {
+      @include standardElements.pGray;
+      margin-bottom: 40px;
+    }
+    button {
+      @include standardElements.button;
+    }
+  }
+}
+
+.callBanner {
+  position: relative;
+  width: 90%;
+  margin-bottom: 120px;
+  background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
+  overflow: hidden;
+  .paperAeroplane {
+    position: absolute;
+    height: 130px;
+    bottom: -20px;
+    right: 15px;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    margin: 5%;
+    h2 {
+      @include standardElements.h2;
+      color: white;
+      margin-bottom: 30px;
+    }
+    p {
+      @include standardElements.pWhite;
+      margin-bottom: 30px;
+    }
+    button {
+      @include standardElements.button;
+      background: white;
+      color: black;
     }
   }
 }

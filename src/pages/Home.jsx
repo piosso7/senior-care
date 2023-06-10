@@ -8,6 +8,9 @@ import osNursing from "../pictures/home/osNursing.svg";
 import osStaff from "../pictures/home/osStaff.svg";
 import clientAvatar1 from "../pictures/home/clientAvatar1.png";
 
+import centerForYou from "../pictures/home/centerForYou.png";
+import paperAeroplane from "../pictures/home/paperAeroplane.svg";
+
 //Single About Us list element function
 function AboutUsListEl(props) {
   return (
@@ -112,7 +115,35 @@ const Home = () => {
           company="ABC Softwares"
         />
       </section>
-
+      <section className="centerForYou">
+        <div className="description">
+          <h2>The Best Eldery Care Center For You</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Augue non malesuada placerat
+            faucibus nam purus sem. Urna pulvinar porttitor dignissim congue
+            pellentesque ac hac. Viverra donec nulla id enim posuere donec morbi
+            dolor. Eu adipiscing massa ut proin mauris orci tincidunt ac in.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <img src={centerForYou} alt="Center For You" />
+      </section>
+      <section className="callBanner">
+        <img
+          src={paperAeroplane}
+          alt="paper aeroplane"
+          className="paperAeroplane"
+        />
+        <div className="description">
+          <h2>Looking for a Better Care?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Augue non malesuada placerat
+            faucibus nam purus sem. Urna pulvinar porttitor dignissim congue
+            pellentesque ac hac.
+          </p>
+          <button>Call Today</button>
+        </div>
+      </section>
       <Fotter />
     </>
   );

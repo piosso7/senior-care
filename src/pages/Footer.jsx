@@ -35,7 +35,9 @@ const Fotter = () => {
             </div>
           </div>
         </div>
-        <p>Copyright 2023 United Software Solutions, All Rights Reserved</p>
+        <p className="copyright">
+          Copyright 2023 United Software Solutions, All Rights Reserved
+        </p>
       </div>
     </>
   );
