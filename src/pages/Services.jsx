@@ -1,7 +1,11 @@
+import TopBanner from "./TopBanner";
+
+import servicesTB from "../pictures/topBanner/servicesTB.png";
+
 const Services = () => {
   return (
     <>
-      <h1>Services</h1>
+      <TopBanner img={servicesTB} title="Services" />
     </>
   );
 };

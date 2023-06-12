@@ -450,4 +450,20 @@ nav button:hover {
   background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
   background: white;
   color: black;
+}
+
+.topBanner {
+  position: relative;
+  width: 100%;
+}
+.topBanner img {
+  width: 100%;
+}
+.topBanner h2 {
+  font-size: 48px;
+  font-size: bold;
+  color: #ffffff;
+  position: absolute;
+  left: 5%;
+  bottom: 15%;
 }/*# sourceMappingURL=index.css.map */

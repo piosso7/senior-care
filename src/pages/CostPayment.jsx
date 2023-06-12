@@ -1,7 +1,9 @@
+import TopBanner from "./TopBanner";
+import costPaymentTB from "../pictures/topBanner/costPaymentTB.png";
 const CostPayment = () => {
   return (
     <>
-      <h1>Cost&Payment</h1>
+      <TopBanner img={costPaymentTB} title="Cost and Payment" />
     </>
   );
 };

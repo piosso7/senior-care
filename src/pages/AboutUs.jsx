@@ -1,7 +1,10 @@
+import TopBanner from "./TopBanner";
+import aboutUsTB from "../pictures/topBanner/aboutUsTB.png";
+
 const AboutUs = () => {
   return (
     <>
-      <h1>About Us</h1>
+      <TopBanner img={aboutUsTB} title="About Us" />
     </>
   );
 };

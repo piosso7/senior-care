@@ -1,0 +1,15 @@
+@use "./standardElements";
+.topBanner {
+  position: relative;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+  h2 {
+    @include standardElements.h2;
+    color: #ffffff;
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+  }
+}
