@@ -1,0 +1,81 @@
+@use "./standardElements";
+.aboutUs {
+  margin-bottom: 120px;
+  .mission {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    .descriptionWrapper {
+      width: 40%;
+      align-items: start;
+      h2 {
+        @include standardElements.h2;
+      }
+      p {
+        @include standardElements.pGray;
+      }
+    }
+    img {
+      width: 50%;
+      max-height: 600px;
+    }
+  }
+  .history {
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    h2 {
+      @include standardElements.h2;
+      margin-bottom: 60px;
+    }
+    .historyElments {
+      flex-direction: column;
+      align-items: flex-start;
+      .historyElement {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        min-height: 120px;
+        .date {
+          min-width: 110px;
+          width: auto;
+        }
+        .description {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          .title {
+            flex-direction: row;
+            width: auto;
+            height: auto;
+            .dot {
+              height: 12px;
+              width: 12px;
+              margin: 22px 24px;
+            }
+            h2 {
+              margin-bottom: 10px;
+            }
+          }
+          .insideDescription {
+            flex-direction: row;
+            width: auto;
+            height: 100%;
+            .line {
+              display: inline-block;
+              margin: 22px 30px;
+              height: 200px;
+              width: 2px;
+              background-color: black;
+            }
+            p {
+              @include standardElements.pGray;
+            }
+          }
+        }
+      }
+    }
+  }
+}

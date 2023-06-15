@@ -178,7 +178,6 @@ nav button:hover {
 }
 .header .headerDescription h1 {
   font-size: 80px;
-  font-size: bold;
   color: #ffffff;
 }
 .header .headerDescription p {
@@ -241,7 +240,6 @@ nav button:hover {
 }
 .shortAboutUs .wrapper .descriptionWrapper h2 {
   font-size: 48px;
-  font-size: bold;
   margin-bottom: 20px;
 }
 .shortAboutUs .wrapper .descriptionWrapper p {
@@ -268,7 +266,6 @@ nav button:hover {
 }
 .shortOurServices h2 {
   font-size: 48px;
-  font-size: bold;
   text-align: center;
   height: 15%;
 }
@@ -318,7 +315,6 @@ nav button:hover {
 }
 .clientReviews h2 {
   font-size: 48px;
-  font-size: bold;
   margin-top: 100px;
   margin-bottom: 100px;
 }
@@ -379,7 +375,6 @@ nav button:hover {
 }
 .centerForYou .description h2 {
   font-size: 48px;
-  font-size: bold;
   margin-bottom: 40px;
 }
 .centerForYou .description p {
@@ -426,7 +421,6 @@ nav button:hover {
 }
 .callBanner .description h2 {
   font-size: 48px;
-  font-size: bold;
   color: white;
   margin-bottom: 30px;
 }
@@ -455,15 +449,100 @@ nav button:hover {
 .topBanner {
   position: relative;
   width: 100%;
+  margin-bottom: 120px;
 }
 .topBanner img {
   width: 100%;
 }
 .topBanner h2 {
   font-size: 48px;
-  font-size: bold;
   color: #ffffff;
   position: absolute;
   left: 5%;
   bottom: 15%;
+}
+
+.aboutUs {
+  margin-bottom: 120px;
+}
+.aboutUs .mission {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.aboutUs .mission .descriptionWrapper {
+  width: 40%;
+  align-items: start;
+}
+.aboutUs .mission .descriptionWrapper h2 {
+  font-size: 48px;
+}
+.aboutUs .mission .descriptionWrapper p {
+  font-size: 18px;
+  color: #848484;
+  line-height: 28px;
+}
+.aboutUs .mission img {
+  width: 50%;
+  max-height: 600px;
+}
+.aboutUs .history {
+  width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.aboutUs .history h2 {
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+.aboutUs .history .historyElments {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.aboutUs .history .historyElments .historyElement {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 120px;
+}
+.aboutUs .history .historyElments .historyElement .date {
+  min-width: 110px;
+  width: auto;
+}
+.aboutUs .history .historyElments .historyElement .description {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.aboutUs .history .historyElments .historyElement .description .title {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+}
+.aboutUs .history .historyElments .historyElement .description .title .dot {
+  height: 12px;
+  width: 12px;
+  margin: 22px 24px;
+}
+.aboutUs .history .historyElments .historyElement .description .title h2 {
+  margin-bottom: 10px;
+}
+.aboutUs .history .historyElments .historyElement .description .insideDescription {
+  flex-direction: row;
+  width: auto;
+  height: 100%;
+}
+.aboutUs .history .historyElments .historyElement .description .insideDescription .line {
+  display: inline-block;
+  margin: 22px 30px;
+  height: 200px;
+  width: 2px;
+  background-color: black;
+}
+.aboutUs .history .historyElments .historyElement .description .insideDescription p {
+  font-size: 18px;
+  color: #848484;
+  line-height: 28px;
 }/*# sourceMappingURL=index.css.map */
