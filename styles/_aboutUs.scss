@@ -26,6 +26,7 @@
     width: 90%;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 120px;
     h2 {
       @include standardElements.h2;
       margin-bottom: 60px;
@@ -74,6 +75,45 @@
               @include standardElements.pGray;
             }
           }
+        }
+      }
+    }
+  }
+  .staff {
+    flex-direction: column;
+    width: 90%;
+    h2 {
+      @include standardElements.h2;
+      margin-bottom: 60px;
+    }
+    .staffMembers {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      .staffMember {
+        flex-direction: column;
+
+        width: 23%;
+        margin-bottom: 6%;
+        .avatar {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .name {
+          width: 95%;
+          margin-bottom: 10px;
+        }
+        .position {
+          @include standardElements.pGray;
+          color: #000;
+          width: 95%;
+          margin-bottom: 10px;
+        }
+        .memberDescription {
+          @include standardElements.pGray;
+          width: 95%;
         }
       }
     }

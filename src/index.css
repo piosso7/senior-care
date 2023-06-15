@@ -492,6 +492,7 @@ nav button:hover {
   width: 90%;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 120px;
 }
 .aboutUs .history h2 {
   font-size: 48px;
@@ -545,4 +546,46 @@ nav button:hover {
   font-size: 18px;
   color: #848484;
   line-height: 28px;
+}
+.aboutUs .staff {
+  flex-direction: column;
+  width: 90%;
+}
+.aboutUs .staff h2 {
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+.aboutUs .staff .staffMembers {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutUs .staff .staffMembers .staffMember {
+  flex-direction: column;
+  width: 23%;
+  margin-bottom: 6%;
+}
+.aboutUs .staff .staffMembers .staffMember .avatar {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.aboutUs .staff .staffMembers .staffMember .name {
+  width: 95%;
+  margin-bottom: 10px;
+}
+.aboutUs .staff .staffMembers .staffMember .position {
+  font-size: 18px;
+  color: #848484;
+  line-height: 28px;
+  color: #000;
+  width: 95%;
+  margin-bottom: 10px;
+}
+.aboutUs .staff .staffMembers .staffMember .memberDescription {
+  font-size: 18px;
+  color: #848484;
+  line-height: 28px;
+  width: 95%;
 }/*# sourceMappingURL=index.css.map */
