@@ -588,4 +588,64 @@ nav button:hover {
   color: #848484;
   line-height: 28px;
   width: 95%;
+}
+
+.services {
+  flex-direction: column;
+  width: 90%;
+}
+.services .service {
+  width: 100%;
+  flex-direction: row;
+  margin-bottom: 120px;
+}
+.services .service .details {
+  flex-direction: column;
+  width: 70%;
+  margin-right: 40px;
+}
+.services .service .details .title {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.services .service .details .title h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+.services .service .details .title p {
+  font-size: 18px;
+  color: #848484;
+  line-height: 28px;
+}
+.services .service .details .description {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.services .service .details .description h3 {
+  font-size: 48px;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.services .service .details .description p {
+  font-size: 18px;
+  color: #848484;
+  line-height: 28px;
+}
+.services .service .offers {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+}
+.services .service .offers h3 {
+  font-size: 48px;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.services .service .offers p {
+  font-size: 18px;
+  color: #848484;
+  line-height: 28px;
+  color: #000;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=index.css.map */

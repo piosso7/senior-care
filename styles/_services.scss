@@ -1,0 +1,54 @@
+@use "./standardElements";
+.services {
+  flex-direction: column;
+  width: 90%;
+  .service {
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 120px;
+    .details {
+      flex-direction: column;
+      width: 70%;
+      margin-right: 40px;
+      .title {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 40px;
+        h2 {
+          @include standardElements.h2;
+          margin-bottom: 40px;
+        }
+        p {
+          @include standardElements.pGray;
+        }
+      }
+      .description {
+        flex-direction: column;
+        align-items: flex-start;
+        h3 {
+          @include standardElements.h2;
+          font-size: 32px;
+          margin-bottom: 20px;
+        }
+        p {
+          @include standardElements.pGray;
+        }
+      }
+    }
+    .offers {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 30%;
+      h3 {
+        @include standardElements.h2;
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+      p {
+        @include standardElements.pGray;
+        color: #000;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
