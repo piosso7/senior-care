@@ -648,4 +648,84 @@ nav button:hover {
   line-height: 28px;
   color: #000;
   margin-bottom: 10px;
+}
+
+.dietaryServices {
+  width: 90%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.dietaryServices .dietaryServicesTitle {
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+.dietaryServices .dietaryServicesWrapper {
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.dietaryServices .dietaryServicesWrapper .frame {
+  align-items: flex-start;
+  background-color: #f3fbf4;
+  border-radius: 10px;
+  width: 32%;
+}
+.dietaryServices .dietaryServicesWrapper .frame .frameImg {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 30px;
+}
+.dietaryServices .dietaryServicesWrapper .frame .frameTitle {
+  font-size: 48px;
+  font-size: 32px;
+  margin: 0px 24px 20px 24px;
+}
+.dietaryServices .dietaryServicesWrapper .frame .frameText {
+  font-size: 18px;
+  color: #848484;
+  line-height: 28px;
+  margin: 0px 24px 20px 24px;
+}
+
+.socialActivities {
+  width: 90%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.socialActivities .socialActivitiesTitle {
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+.socialActivities .socialActivitiesWrapper {
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.socialActivities .socialActivitiesWrapper .frame {
+  align-items: flex-start;
+  border-radius: 10px;
+  border: 2px solid #028a0f;
+  width: 49%;
+  margin-bottom: 20px;
+}
+.socialActivities .socialActivitiesWrapper .frame .frameImg {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 40px;
+}
+.socialActivities .socialActivitiesWrapper .frame .frameTitle {
+  font-size: 48px;
+  font-size: 32px;
+  margin: 0px 24px 20px 24px;
+}
+.socialActivities .socialActivitiesWrapper .frame .frameText {
+  font-size: 18px;
+  color: #848484;
+  line-height: 28px;
+  margin: 0px 24px 46px 24px;
 }/*# sourceMappingURL=index.css.map */

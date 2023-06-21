@@ -1,6 +1,16 @@
 import TopBanner from "./TopBanner";
+import Frame from "./Frame";
 
 import servicesTB from "../pictures/topBanner/servicesTB.png";
+
+import meal1 from "../pictures/services/meal1.png";
+import meal2 from "../pictures/services/meal2.png";
+import meal3 from "../pictures/services/meal3.png";
+
+import socialActivities1 from "../pictures/services/socialActivities1.png";
+import socialActivities2 from "../pictures/services/socialActivities2.png";
+import socialActivities3 from "../pictures/services/socialActivities3.png";
+import socialActivities4 from "../pictures/services/socialActivities4.png";
 
 const Service = (props) => {
   return (
@@ -77,6 +87,55 @@ const Services = () => {
           offerText5="Name of the Service Offerings"
           offerText6="Name of the Service Offerings"
         />
+      </div>
+      <div className="dietaryServices">
+        <h2 className="dietaryServicesTitle">Dietary Services</h2>
+        <div className="dietaryServicesWrapper">
+          <Frame
+            img={meal1}
+            title="Meal Plan #1"
+            text="Lorem ipsum dolor sit amet consectetur. Augue non malesuada placerat faucibus nam purus sem. Urna pulvinar porttitor dignissim congue pellentesque ac hac. "
+          />
+          <Frame
+            img={meal2}
+            title="Meal Plan #2"
+            text="Lorem ipsum dolor sit amet consectetur. Augue non malesuada placerat faucibus nam purus sem. Urna pulvinar porttitor dignissim congue pellentesque ac hac. "
+          />
+          <Frame
+            img={meal3}
+            title="Meal Plan #3"
+            text="Lorem ipsum dolor sit amet consectetur. Augue non malesuada placerat faucibus nam purus sem. Urna pulvinar porttitor dignissim congue pellentesque ac hac. "
+          />
+        </div>
+      </div>
+      <div className="socialActivities">
+        <h2 className="socialActivitiesTitle">
+          Recreational and Social Activities
+        </h2>
+
+        {/* PODMIENIĆ KLASY I PRZESTYLOWAĆ */}
+        <div className="socialActivitiesWrapper">
+          <Frame
+            img={socialActivities1}
+            title="Yoga"
+            text="Lorem ipsum dolor sit amet consectetur. Augue non malesuada placerat faucibus nam purus sem. Urna pulvinar porttitor dignissim congue pellentesque ac hac. "
+          />
+          <Frame
+            img={socialActivities2}
+            title="Board Games"
+            text="Lorem ipsum dolor sit amet consectetur. Augue non malesuada placerat faucibus nam purus sem. Urna pulvinar porttitor dignissim congue pellentesque ac hac. "
+          />
+          <Frame
+            img={socialActivities3}
+            title="Gardenning"
+            text="Lorem ipsum dolor sit amet consectetur. Augue non malesuada placerat faucibus nam purus sem. Urna pulvinar porttitor dignissim congue pellentesque ac hac. "
+          />
+          <Frame
+            img={socialActivities4}
+            title="Indoor Games"
+            text="Lorem ipsum dolor sit amet consectetur. Augue non malesuada placerat faucibus nam purus sem. Urna pulvinar porttitor dignissim congue pellentesque ac hac. "
+          />
+        </div>
       </div>
     </>
   );

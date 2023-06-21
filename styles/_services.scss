@@ -52,3 +52,77 @@
     }
   }
 }
+.dietaryServices {
+  width: 90%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  .dietaryServicesTitle {
+    @include standardElements.h2;
+    margin-bottom: 60px;
+  }
+  .dietaryServicesWrapper {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    .frame {
+      align-items: flex-start;
+      background-color: standardElements.$lightGreen;
+      border-radius: 10px;
+      width: 32%;
+      .frameImg {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-bottom: 30px;
+      }
+      .frameTitle {
+        @include standardElements.h2;
+        font-size: 32px;
+        margin: 0px 24px 20px 24px;
+      }
+      .frameText {
+        @include standardElements.pGray;
+        margin: 0px 24px 20px 24px;
+      }
+    }
+  }
+}
+.socialActivities {
+  width: 90%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  .socialActivitiesTitle {
+    @include standardElements.h2;
+    margin-bottom: 60px;
+  }
+  .socialActivitiesWrapper {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .frame {
+      align-items: flex-start;
+      border-radius: 10px;
+      border: 2px solid #028a0f;
+      width: 49%;
+      margin-bottom: 20px;
+      .frameImg {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-bottom: 40px;
+      }
+      .frameTitle {
+        @include standardElements.h2;
+        font-size: 32px;
+        margin: 0px 24px 20px 24px;
+      }
+      .frameText {
+        @include standardElements.pGray;
+        margin: 0px 24px 46px 24px;
+      }
+    }
+  }
+}
