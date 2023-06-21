@@ -227,9 +227,9 @@ nav button:hover {
 }
 .shortAboutUs .wrapper .imgWrapper div {
   width: 90%;
-  height: 90%;
+  aspect-ratio: 1/1;
   position: absolute;
-  top: 10%;
+  top: 18%;
   right: 0;
   border: solid 4px #028a0f;
 }
