@@ -728,4 +728,148 @@ nav button:hover {
   color: #848484;
   line-height: 28px;
   margin: 0px 24px 46px 24px;
+}
+
+.indoor {
+  width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.indoor .indoorTitle {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+.indoor .indoorWrapper {
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.indoor .indoorWrapper .frame {
+  align-items: flex-start;
+  width: 49%;
+  margin-bottom: 20px;
+}
+.indoor .indoorWrapper .frame .frameImg {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.indoor .indoorWrapper .frame .frameTitle {
+  font-size: 48px;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.indoor .indoorWrapper .frame .frameText {
+  font-size: 18px;
+  color: #848484;
+  line-height: 28px;
+}
+
+.outdoor {
+  width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.outdoor .outdoorTitle {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+.outdoor .outdoorWrapper {
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.outdoor .outdoorWrapper .frame {
+  align-items: flex-start;
+  width: 49%;
+  margin-bottom: 20px;
+}
+.outdoor .outdoorWrapper .frame .frameImg {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.outdoor .outdoorWrapper .frame .frameTitle {
+  font-size: 48px;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.outdoor .outdoorWrapper .frame .frameText {
+  font-size: 18px;
+  color: #848484;
+  line-height: 28px;
+}
+
+.commonAreas {
+  width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.commonAreas .commonAreasTitle {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+.commonAreas .commonAreasImages {
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.commonAreas .commonAreasImages img {
+  width: 49%;
+  margin-bottom: 20px;
+}
+.commonAreas .commonAreasText {
+  font-size: 18px;
+  color: #848484;
+  line-height: 28px;
+}
+
+.accessibilityFeatures {
+  width: 90%;
+  margin-bottom: 120px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.accessibilityFeatures .accessibilityFeaturesTitle {
+  font-size: 48px;
+  text-align: center;
+  height: 15%;
+  margin-bottom: 40px;
+}
+.accessibilityFeatures .accessibilityFeaturesWrapper {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.accessibilityFeatures .accessibilityFeaturesWrapper .frame {
+  background-color: #f3fbf4;
+  align-items: start;
+  justify-content: space-between;
+  border-radius: 10px;
+  width: 30%;
+  height: 42%;
+  padding: 2%;
+  margin-bottom: 20px;
+}
+.accessibilityFeatures .accessibilityFeaturesWrapper .frame .frameImg {
+  height: 45px;
+  margin-bottom: 20px;
+}
+.accessibilityFeatures .accessibilityFeaturesWrapper .frame h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.accessibilityFeatures .accessibilityFeaturesWrapper .frame p {
+  font-size: 18px;
+  color: #848484;
+  line-height: 28px;
 }/*# sourceMappingURL=index.css.map */

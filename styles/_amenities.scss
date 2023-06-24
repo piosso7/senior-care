@@ -1,0 +1,132 @@
+@use "./standardElements";
+.indoor {
+  width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  .indoorTitle {
+    @include standardElements.h2;
+    margin-bottom: 40px;
+  }
+  .indoorWrapper {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .frame {
+      align-items: flex-start;
+      width: 49%;
+      margin-bottom: 20px;
+      .frameImg {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+      .frameTitle {
+        @include standardElements.h2;
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+      .frameText {
+        @include standardElements.pGray;
+      }
+    }
+  }
+}
+.outdoor {
+  width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  .outdoorTitle {
+    @include standardElements.h2;
+    margin-bottom: 40px;
+  }
+  .outdoorWrapper {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .frame {
+      align-items: flex-start;
+      width: 49%;
+      margin-bottom: 20px;
+      .frameImg {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+      .frameTitle {
+        @include standardElements.h2;
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+      .frameText {
+        @include standardElements.pGray;
+      }
+    }
+  }
+}
+.commonAreas {
+  width: 90%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  .commonAreasTitle {
+    @include standardElements.h2;
+    margin-bottom: 40px;
+  }
+  .commonAreasImages {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    img {
+      width: 49%;
+      margin-bottom: 20px;
+    }
+  }
+  .commonAreasText {
+    @include standardElements.pGray;
+  }
+}
+.accessibilityFeatures {
+  width: 90%;
+  margin-bottom: 120px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .accessibilityFeaturesTitle {
+    @include standardElements.h2;
+    text-align: center;
+    height: 15%;
+    margin-bottom: 40px;
+  }
+  .accessibilityFeaturesWrapper {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .frame {
+      background-color: standardElements.$lightGreen;
+      align-items: start;
+      justify-content: space-between;
+      border-radius: 10px;
+      width: 30%;
+      height: 42%;
+      padding: 2%;
+      margin-bottom: 20px;
+      .frameImg {
+        height: 45px;
+        margin-bottom: 20px;
+      }
+      h3 {
+        @include standardElements.h3Footer;
+      }
+      p {
+        @include standardElements.pGray;
+      }
+    }
+  }
+}
