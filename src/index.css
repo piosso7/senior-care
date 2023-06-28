@@ -872,4 +872,68 @@ nav button:hover {
   font-size: 18px;
   color: #848484;
   line-height: 28px;
+}
+
+.paymentPlans {
+  width: 90%;
+}
+.paymentPlans .paymentPlansTitle {
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+.paymentPlans .subscriptionTimeSwitch {
+  border: solid 2px black;
+  border-radius: 8px;
+  width: 30%;
+  height: 60px;
+  position: relative;
+}
+.paymentPlans .subscriptionTimeSwitch .backgroundSwitch {
+  position: absolute;
+  border: solid 2px black;
+  border-radius: 5px;
+  height: 100%;
+  width: 45%;
+  background: black;
+  left: -2px;
+  transition: 0.2s;
+}
+.paymentPlans .subscriptionTimeSwitch .backgroundSwitch.right {
+  width: 55%;
+  left: 45%;
+}
+.paymentPlans .subscriptionTimeSwitch .monthSubscription {
+  position: absolute;
+  font-size: 20px;
+  width: 45%;
+  height: 100%;
+  color: white;
+  left: -2px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.paymentPlans .subscriptionTimeSwitch .monthSubscription.right {
+  color: black;
+}
+.paymentPlans .subscriptionTimeSwitch .yearSubscription {
+  position: absolute;
+  flex-direction: row;
+  font-size: 20px;
+  width: 55%;
+  right: -2px;
+  cursor: pointer;
+}
+.paymentPlans .subscriptionTimeSwitch .yearSubscription .year {
+  margin-right: 15px;
+  color: black;
+  transition: 0.2s;
+}
+.paymentPlans .subscriptionTimeSwitch .yearSubscription .year.right {
+  color: white;
+}
+.paymentPlans .subscriptionTimeSwitch .yearSubscription .promo {
+  background-color: #f9d783;
+  padding: 6px;
+  border-radius: 5px;
+  color: black;
 }/*# sourceMappingURL=index.css.map */

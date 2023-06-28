@@ -1,0 +1,65 @@
+@use "./standardElements";
+
+.paymentPlans {
+  width: 90%;
+  .paymentPlansTitle {
+    @include standardElements.h2;
+    margin-bottom: 60px;
+  }
+  .subscriptionTimeSwitch {
+    border: solid 2px black;
+    border-radius: 8px;
+    width: 30%;
+    height: 60px;
+    position: relative;
+    .backgroundSwitch {
+      position: absolute;
+      border: solid 2px black;
+      border-radius: 5px;
+      height: 100%;
+      width: 45%;
+      background: black;
+      left: -2px;
+      transition: 0.2s;
+    }
+    .backgroundSwitch.right {
+      width: 55%;
+      left: 45%;
+    }
+    .monthSubscription {
+      position: absolute;
+      font-size: 20px;
+      width: 45%;
+      height: 100%;
+      color: white;
+      left: -2px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .monthSubscription.right {
+      color: black;
+    }
+    .yearSubscription {
+      position: absolute;
+      flex-direction: row;
+      font-size: 20px;
+      width: 55%;
+      right: -2px;
+      cursor: pointer;
+      .year {
+        margin-right: 15px;
+        color: black;
+        transition: 0.2s;
+      }
+      .year.right {
+        color: white;
+      }
+      .promo {
+        background-color: #f9d783;
+        padding: 6px;
+        border-radius: 5px;
+        color: black;
+      }
+    }
+  }
+}
