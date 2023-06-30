@@ -22,7 +22,7 @@
       left: -2px;
       transition: 0.2s;
     }
-    .backgroundSwitch.right {
+    .backgroundSwitch.yearPlan {
       width: 55%;
       left: 45%;
     }
@@ -36,7 +36,7 @@
       cursor: pointer;
       transition: 0.2s;
     }
-    .monthSubscription.right {
+    .monthSubscription.yearPlan {
       color: black;
     }
     .yearSubscription {
@@ -51,7 +51,7 @@
         color: black;
         transition: 0.2s;
       }
-      .year.right {
+      .year.yearPlan {
         color: white;
       }
       .promo {
@@ -60,6 +60,15 @@
         border-radius: 5px;
         color: black;
       }
+    }
+  }
+  .monthPlans {
+    flex-direction: row;
+    justify-content: space-between;
+    .paymentPlanBanner {
+      width: 30%;
+      border: standardElements.$colorGreen 2px solid;
+      border-radius: 5px;
     }
   }
 }

@@ -898,7 +898,7 @@ nav button:hover {
   left: -2px;
   transition: 0.2s;
 }
-.paymentPlans .subscriptionTimeSwitch .backgroundSwitch.right {
+.paymentPlans .subscriptionTimeSwitch .backgroundSwitch.yearPlan {
   width: 55%;
   left: 45%;
 }
@@ -912,7 +912,7 @@ nav button:hover {
   cursor: pointer;
   transition: 0.2s;
 }
-.paymentPlans .subscriptionTimeSwitch .monthSubscription.right {
+.paymentPlans .subscriptionTimeSwitch .monthSubscription.yearPlan {
   color: black;
 }
 .paymentPlans .subscriptionTimeSwitch .yearSubscription {
@@ -928,7 +928,7 @@ nav button:hover {
   color: black;
   transition: 0.2s;
 }
-.paymentPlans .subscriptionTimeSwitch .yearSubscription .year.right {
+.paymentPlans .subscriptionTimeSwitch .yearSubscription .year.yearPlan {
   color: white;
 }
 .paymentPlans .subscriptionTimeSwitch .yearSubscription .promo {
@@ -936,4 +936,13 @@ nav button:hover {
   padding: 6px;
   border-radius: 5px;
   color: black;
+}
+.paymentPlans .monthPlans {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.paymentPlans .monthPlans .paymentPlanBanner {
+  width: 30%;
+  border: #028a0f 2px solid;
+  border-radius: 5px;
 }/*# sourceMappingURL=index.css.map */
