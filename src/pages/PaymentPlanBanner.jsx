@@ -40,20 +40,19 @@ export default class PaymentPlanBanner extends Component {
           <div className="offeringService">
             <img src={this.props.check7} alt="check or uncheck symbol" />
             <p>Name of the Service Offerings</p>
-            <p className="coomingSoon">Coming Soon</p>
           </div>
           <div className="offeringService">
             <img src={this.props.check8} alt="check or uncheck symbol" />
             <p>Name of the Service Offerings</p>
-            <p className="coomingSoon">Coming Soon</p>
           </div>
           <div className="offeringService">
             <img src={this.props.check9} alt="check or uncheck symbol" />
             <p>Name of the Service Offerings</p>
-            <p className="coomingSoon">Coming Soon</p>
           </div>
         </div>
-        <div className={this.props.classPopular}>Start free 14-day Trial</div>
+        <div className={this.props.classPopularButton}>
+          Start free 14-day Trial
+        </div>
         <p className="noCard">No credit card required</p>
       </div>
     );
