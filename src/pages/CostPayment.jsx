@@ -1,7 +1,9 @@
 import { useState } from "react";
 import TopBanner from "./TopBanner";
+
 import costPaymentTB from "../pictures/topBanner/costPaymentTB.png";
 import paperAeroplane from "../pictures/home/paperAeroplane.svg";
+
 import MonthPlans from "./MonthPlans";
 import YearPlans from "./YearPlans";
 

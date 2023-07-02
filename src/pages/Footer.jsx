@@ -1,9 +1,11 @@
+import MiniLayout from "./MiniLayout";
+
 import Logo from "../pictures/LogoCareHome.svg";
 import FBLogo from "../pictures/footer/fblogo.svg";
 import TLogo from "../pictures/footer/tlogo.svg";
 import ILogo from "../pictures/footer/ilogo.svg";
 import INLogo from "../pictures/footer/inlogo.svg";
-import MiniLayout from "./MiniLayout";
+
 const Fotter = () => {
   return (
     <>

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PaymentPlanBanner from "./PaymentPlanBanner";
+
 import check from "../pictures/costPayment/check.svg";
 import unCheck from "../pictures/costPayment/unCheck.svg";
 
