@@ -8,7 +8,7 @@ const Layout = () => {
         <img src={Logo} alt="Logo"></img>
         <ul>
           <li>
-            <NavLink className="link" to="/">
+            <NavLink className="link" to="/senior-care">
               Home
             </NavLink>
           </li>
