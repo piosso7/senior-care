@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TopBanner from "./TopBanner";
 import costPaymentTB from "../pictures/topBanner/costPaymentTB.png";
+import paperAeroplane from "../pictures/home/paperAeroplane.svg";
 import MonthPlans from "./MonthPlans";
 import YearPlans from "./YearPlans";
 
@@ -45,6 +46,37 @@ const CostPayment = () => {
             <YearPlans />
           </div>
         </div>
+        <div className="insuranceWrapper">
+          <h2 className="title">Insurance and Medicare/Medicaid</h2>
+          <p className="description">
+            Lorem ipsum dolor sit amet consectetur. Augue non malesuada placerat
+            faucibus nam purus sem. Urna pulvinar porttitor dignissim congue
+            pellentesque ac hac. Viverra donec nulla id enim posuere donec morbi
+            dolor. Eu adipiscing massa ut proin mauris orci tincidunt ac in.
+            Augue non malesuada placerat faucibus nam purus sem. Lorem ipsum
+            dolor sit amet consectetur. Augue non malesuada placerat faucibus
+            nam purus sem. Urna pulvinar porttitor dignissim congue pellentesque
+            ac hac. Viverra donec nulla id enim posuere donec morbi dolor. Eu
+            adipiscing massa ut proin mauris orci tincidunt ac in. Augue non
+            malesuada placerat faucibus nam purus sem.
+          </p>
+        </div>
+        <section className="callBanner">
+          <img
+            src={paperAeroplane}
+            alt="paper aeroplane"
+            className="paperAeroplane"
+          />
+          <div className="description">
+            <h2>Financial Assistance Resources</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Augue non malesuada
+              placerat faucibus nam purus sem. Urna pulvinar porttitor dignissim
+              congue pellentesque ac hac.
+            </p>
+            <button>Get in Touch</button>
+          </div>
+        </section>
       </div>
     </>
   );
