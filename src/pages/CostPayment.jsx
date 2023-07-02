@@ -2,6 +2,7 @@ import { useState } from "react";
 import TopBanner from "./TopBanner";
 import costPaymentTB from "../pictures/topBanner/costPaymentTB.png";
 import MonthPlans from "./MonthPlans";
+import YearPlans from "./YearPlans";
 
 const CostPayment = () => {
   const [isActive, setIsActive] = useState(true);
@@ -36,8 +37,13 @@ const CostPayment = () => {
             <p className="promo">Save 20%</p>
           </div>
         </div>
-        <div className="monthPlans">
-          <MonthPlans />
+        <div className="plans">
+          <div className={isActive ? "plansOn" : "plansOff"}>
+            <MonthPlans />
+          </div>
+          <div className={isActive ? "plansOff" : "plansOn"}>
+            <YearPlans />
+          </div>
         </div>
       </div>
     </>

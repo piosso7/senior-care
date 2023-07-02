@@ -12,7 +12,7 @@
     width: 30%;
     height: 60px;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     .backgroundSwitch {
       position: absolute;
       border: solid 2px black;
@@ -63,97 +63,125 @@
       }
     }
   }
-  .monthPlans {
+  .plans {
     margin-bottom: 120px;
+    width: 90%;
     flex-direction: row;
     justify-content: space-between;
-    .paymentPlanBanner {
-      width: 30%;
-      border: standardElements.$colorGreen 2px solid;
-      border-radius: 5px;
-      align-items: center;
-      padding: 30px 30px;
-      .planLevelWrapper {
-        align-items: flex-start;
-        margin-bottom: 50px;
-        min-height: 80px;
-        .classPopular {
-          background-color: #f9d783;
-          padding: 0 15px;
-          font-size: 15px;
-          color: black;
-          width: auto;
-          border-radius: 5px;
-          margin-bottom: 15px;
-        }
-        .nonPopular {
-          display: none;
-        }
-        .level {
-          width: auto;
-          padding: 5px 14px;
-          text-transform: uppercase;
-          color: black;
-          background-color: #f1f1f1;
-          border-radius: 5px;
-          font-size: 15px;
-        }
-      }
-      .priceWrapper {
-        align-items: flex-start;
-        height: 150px;
-        border-top: 2px solid #e3e3e3;
-        border-bottom: 2px solid #e3e3e3;
-        margin-bottom: 30px;
-        .price {
-          font-size: 66px;
-          font-weight: 900;
-          margin-bottom: 5px;
-        }
-        .description {
-          font-size: 15px;
-        }
-      }
-      .offeringServices {
-        align-items: flex-start;
-        justify-content: flex-start;
-        margin-bottom: 30px;
-        .offeringService {
-          justify-content: flex-start;
+    .plansOn {
+      flex-direction: row;
+      justify-content: space-between;
+      .paymentPlanBanner {
+        width: 30%;
+        border: standardElements.$colorGreen 2px solid;
+        border-radius: 5px;
+        align-items: center;
+        padding: 30px 30px;
+        background-color: #fff;
+        transition: 0.5s;
+        .planLevelWrapper {
           align-items: flex-start;
-          flex-direction: row;
-          img {
-            width: 22px;
-            margin-right: 5px;
-          }
-          p {
+          margin-bottom: 50px;
+          min-height: 80px;
+          .classPopular {
+            background-color: #f9d783;
+            padding: 0 15px;
+            font-size: 15px;
+            color: black;
+            width: auto;
+            border-radius: 5px;
             margin-bottom: 15px;
+          }
+          .nonPopular {
+            display: none;
+          }
+          .level {
+            width: auto;
+            padding: 5px 14px;
+            text-transform: uppercase;
+            color: black;
+            background-color: #f1f1f1;
+            border-radius: 5px;
             font-size: 15px;
           }
         }
+        .priceWrapper {
+          align-items: flex-start;
+          height: 150px;
+          border-top: 2px solid #e3e3e3;
+          border-bottom: 2px solid #e3e3e3;
+          margin-bottom: 30px;
+          .price {
+            font-size: 66px;
+            font-weight: 900;
+            margin-bottom: 5px;
+            transition: 0.5s;
+          }
+          .description {
+            font-size: 15px;
+            transition: 0.5s;
+          }
+        }
+        .offeringServices {
+          align-items: flex-start;
+          justify-content: flex-start;
+          margin-bottom: 30px;
+          .offeringService {
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: row;
+            transition: 0.5s;
+            img {
+              width: 22px;
+              margin-right: 5px;
+            }
+            p {
+              margin-bottom: 15px;
+              font-size: 15px;
+            }
+          }
+        }
+        .nonPopularButton {
+          width: 100%;
+          color: #fff;
+          background-color: black;
+          border-radius: 5px;
+          padding: 10px;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+        .classPopularButton {
+          width: 100%;
+          color: black;
+          background-color: #f9d783;
+          border-radius: 5px;
+          padding: 10px;
+          margin-bottom: 10px;
+          font-weight: 900;
+          cursor: pointer;
+        }
+        .noCard {
+          color: black;
+          font-size: 15px;
+          margin-bottom: 50px;
+        }
       }
-      .nonPopularButton {
-        width: 100%;
-        color: #fff;
-        background-color: black;
-        border-radius: 5px;
-        padding: 10px;
-        margin-bottom: 10px;
+      .paymentPlanBanner:hover {
+        transform: scale(1.05);
+        background-color: standardElements.$colorGreen;
+        .price {
+          color: #fff;
+        }
+        .description {
+          color: #fff;
+        }
+        .offeringService {
+          color: #fff;
+        }
       }
-      .classPopularButton {
-        width: 100%;
-        color: black;
-        background-color: #f9d783;
-        border-radius: 5px;
-        padding: 10px;
-        margin-bottom: 10px;
-        font-weight: 900;
-      }
-      .noCard {
-        color: black;
-        font-size: 15px;
-        margin-bottom: 50px;
-      }
+    }
+    .plansOff {
+      display: none;
     }
   }
 }
