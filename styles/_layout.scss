@@ -36,3 +36,38 @@ nav {
     @include standardElements.button;
   }
 }
+
+@media (max-width: 1200px) {
+  nav {
+    width: 100%;
+    img {
+      width: 60px;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 70%;
+      li {
+        list-style: none;
+        .link {
+          font-size: 12px;
+          text-decoration: none;
+          color: black;
+          margin: 0 5px;
+        }
+        .link.active {
+          @include standardElements.colorHoverGreen;
+        }
+        .link:hover {
+          @include standardElements.colorHoverGreen;
+        }
+      }
+    }
+    button {
+      @include standardElements.button;
+      font-size: 12px;
+    }
+  }
+}

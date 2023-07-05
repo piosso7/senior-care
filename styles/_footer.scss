@@ -14,6 +14,8 @@
     width: 90%;
     flex-direction: row;
     justify-content: space-between;
+
+    // ---------------------DESCRIPTION SECTION---------------------------//
     .descriptionContainer {
       width: 30%;
       flex-direction: column;
@@ -38,6 +40,8 @@
         }
       }
     }
+
+    // ---------------------LINKS SECTION---------------------------//
     .linksContainer {
       width: 30%;
       flex-direction: row;
@@ -86,7 +90,87 @@
       }
     }
   }
+
+  // ---------------------COPYRIGHT SECTION---------------------------//
   .copyright {
     margin-top: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .wrapper {
+      // ---------------------DESCRIPTION SECTION---------------------------//
+      .descriptionContainer {
+        width: 30%;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        .footerLogo {
+          width: 100px;
+          height: 70px;
+          margin-bottom: 0px;
+        }
+        p {
+          @include standardElements.pGraySmall;
+          color: black;
+        }
+        .social {
+          img {
+            width: 16px;
+            margin-right: 12px;
+          }
+        }
+      }
+
+      // ---------------------LINKS SECTION---------------------------//
+      .linksContainer {
+        .quickLinks {
+          h3 {
+            @include standardElements.h3FooterSmall;
+          }
+          flex-direction: column;
+          .miniLayout {
+            ul {
+              li {
+                margin-bottom: 12px;
+                .miniLink {
+                  @include standardElements.pGraySmall;
+                  text-decoration: none;
+                  color: black;
+                }
+                .miniLink:hover {
+                  @include standardElements.colorHoverGreen;
+                }
+              }
+            }
+          }
+        }
+        .legalLinks {
+          flex-direction: column;
+          align-items: start;
+          h3 {
+            @include standardElements.h3FooterSmall;
+          }
+          a {
+            @include standardElements.pGraySmall;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 12px;
+          }
+          a:hover {
+            @include standardElements.colorHoverGreen;
+          }
+        }
+      }
+    }
+
+    // ---------------------COPYRIGHT SECTION---------------------------//
+    .copyright {
+      margin-top: 50px;
+      font-size: 12px;
+    }
   }
 }

@@ -6,8 +6,16 @@ $lightGreen: #f3fbf4;
   color: #ffffff;
 }
 
+@mixin h1Small {
+  font-size: 40px;
+}
+
 @mixin h2 {
   font-size: 48px;
+}
+
+@mixin h2Small {
+  font-size: 24px;
 }
 
 @mixin pWhite {
@@ -15,14 +23,31 @@ $lightGreen: #f3fbf4;
   color: #ffffff;
   line-height: 28px;
 }
+
+@mixin pWhiteSmall {
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 22px;
+}
+
 @mixin pGray {
   font-size: 18px;
   color: #848484;
   line-height: 28px;
 }
+@mixin pGraySmall {
+  font-size: 12px;
+  color: #848484;
+  line-height: 22px;
+}
 
 @mixin h3Footer {
   font-size: 20px;
+  margin-bottom: 20px;
+}
+
+@mixin h3FooterSmall {
+  font-size: 16px;
   margin-bottom: 20px;
 }
 

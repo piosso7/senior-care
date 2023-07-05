@@ -1,6 +1,10 @@
 @use "./standardElements";
+
 .aboutUs {
   margin-bottom: 120px;
+
+  // ---------------------MISSION SECTION---------------------------//
+
   .mission {
     width: 90%;
     display: flex;
@@ -22,6 +26,9 @@
       max-height: 600px;
     }
   }
+
+  // ---------------------HISTORY SECTION---------------------------//
+
   .history {
     width: 90%;
     flex-direction: column;
@@ -79,6 +86,9 @@
       }
     }
   }
+
+  // ---------------------STAFF SECTION---------------------------//
+
   .staff {
     flex-direction: column;
     width: 90%;
@@ -114,6 +124,83 @@
         .memberDescription {
           @include standardElements.pGray;
           width: 95%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .aboutUs {
+    margin-bottom: 60px;
+
+    // ---------------------MISSION SECTION---------------------------//
+
+    .mission {
+      width: 90%;
+      margin-bottom: 60px;
+      .descriptionWrapper {
+        h2 {
+          @include standardElements.h2Small;
+        }
+        p {
+          @include standardElements.pGraySmall;
+        }
+      }
+      img {
+        width: 40%;
+      }
+    }
+
+    // ---------------------HISTORY SECTION---------------------------//
+
+    .history {
+      margin-bottom: 30px;
+      h2 {
+        @include standardElements.h2Small;
+        margin-bottom: 30px;
+      }
+      .historyElments {
+        .historyElement {
+          .date {
+            line-height: 50px;
+          }
+          .description {
+            .title {
+              line-height: 50px;
+              h2 {
+                margin-bottom: 0px;
+              }
+            }
+            .insideDescription {
+              .line {
+                height: 150px;
+              }
+              p {
+                @include standardElements.pGraySmall;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // ---------------------STAFF SECTION---------------------------//
+
+    .staff {
+      h2 {
+        @include standardElements.h2Small;
+        margin-bottom: 30px;
+      }
+      .staffMembers {
+        .staffMember {
+          width: 48%;
+          .position {
+            @include standardElements.pGraySmall;
+          }
+          .memberDescription {
+            @include standardElements.pGraySmall;
+          }
         }
       }
     }

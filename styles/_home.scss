@@ -1,6 +1,6 @@
 @use "./standardElements";
 
-//HEADER
+// ---------------------HEADER SECTION---------------------------//
 
 .header {
   width: 100%;
@@ -26,7 +26,7 @@
   }
 }
 
-//ABOUT US SECTION
+// ---------------------ABOUT US SECTION---------------------------//
 
 .shortAboutUs {
   width: 90%;
@@ -80,7 +80,8 @@
   }
 }
 
-//OUR SERVICES SECTION
+// ---------------------OUR SERVICES SECTION---------------------------//
+
 .shortOurServices {
   width: 90%;
   margin-bottom: 120px;
@@ -126,7 +127,7 @@
   }
 }
 
-//CLIENT REVIEWS SECTION
+// ---------------------CLIENT REVIEWS SECTION---------------------------//
 
 .clientReviews {
   width: 100%;
@@ -175,7 +176,7 @@
   }
 }
 
-// CENTER FOR YOU
+// ---------------------CENTER FOR YOU SECTION---------------------------//
 
 .centerForYou {
   display: flex;
@@ -202,11 +203,12 @@
     }
     button {
       @include standardElements.button;
+      @include standardElements.pWhiteSmall;
     }
   }
 }
 
-//Call Banner
+// ---------------------CALL BANNER---------------------------//
 
 .callBanner {
   position: relative;
@@ -239,8 +241,163 @@
     }
     button {
       @include standardElements.button;
+      @include standardElements.pWhiteSmall;
       background: white;
       color: black;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  // ---------------------HEADER SECTION---------------------------//
+
+  .header {
+    .headerDescription {
+      h1 {
+        @include standardElements.h1Small;
+      }
+      p {
+        @include standardElements.pWhiteSmall;
+      }
+    }
+  }
+
+  // ---------------------ABOUT US SECTION---------------------------//
+
+  .shortAboutUs {
+    margin-bottom: 60px;
+    height: 400px;
+    .wrapper {
+      .imgWrapper {
+        width: 40%;
+        img {
+          width: 70%;
+        }
+        div {
+          width: 70%;
+        }
+      }
+      .descriptionWrapper {
+        width: 50%;
+        h2 {
+          @include standardElements.h2Small;
+        }
+        p {
+          @include standardElements.pGraySmall;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  // ---------------------OUR SERVICES SECTION---------------------------//
+
+  .shortOurServices {
+    margin-bottom: 60px;
+    h2 {
+      @include standardElements.h2Small;
+      margin-bottom: 20px;
+    }
+    .carts {
+      .card {
+        img {
+          height: 25px;
+          margin-bottom: 20px;
+        }
+        h3 {
+          @include standardElements.h3Footer;
+        }
+        p {
+          @include standardElements.pGraySmall;
+        }
+      }
+    }
+  }
+
+  // ---------------------CLIENT REVIEWS SECTION---------------------------//
+
+  .clientReviews {
+    margin-bottom: 60px;
+    h2 {
+      @include standardElements.h2Small;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .clientReview {
+      flex-direction: column;
+      width: 70%;
+      text-align: center;
+      .clientRevievDescription {
+        @include standardElements.pGraySmall;
+        margin-bottom: 50px;
+      }
+      .clientInfo {
+        img {
+          width: 60px;
+        }
+        .userName {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-left: 10px;
+          h3 {
+            @include standardElements.h3Footer;
+            margin-bottom: 10px;
+          }
+          p {
+            @include standardElements.pGraySmall;
+          }
+        }
+      }
+    }
+  }
+
+  // ---------------------CENTER FOR YOU SECTION---------------------------//
+
+  .centerForYou {
+    margin-bottom: 60px;
+    img {
+      width: 50%;
+      height: 50%;
+    }
+    .description {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 40%;
+      h2 {
+        @include standardElements.h2Small;
+        margin-bottom: 40px;
+      }
+      p {
+        @include standardElements.pGraySmall;
+        margin-bottom: 40px;
+      }
+      button {
+        @include standardElements.button;
+        @include standardElements.pWhiteSmall;
+      }
+    }
+  }
+
+  // ---------------------CALL BANNER---------------------------//
+
+  .callBanner {
+    margin-bottom: 60px;
+    .description {
+      h2 {
+        @include standardElements.h2Small;
+        margin-bottom: 20px;
+      }
+      p {
+        @include standardElements.pWhiteSmall;
+        margin-bottom: 20px;
+      }
+      button {
+        @include standardElements.button;
+        @include standardElements.pWhiteSmall;
+        background: white;
+        color: black;
+      }
     }
   }
 }

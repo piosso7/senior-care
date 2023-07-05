@@ -67,6 +67,50 @@ nav button {
   background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
 }
 
+@media (max-width: 1200px) {
+  nav {
+    width: 100%;
+  }
+  nav img {
+    width: 60px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+  }
+  nav ul li {
+    list-style: none;
+  }
+  nav ul li .link {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    margin: 0 5px;
+  }
+  nav ul li .link.active {
+    color: #028a0f;
+  }
+  nav ul li .link:hover {
+    color: #028a0f;
+  }
+  nav button {
+    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    padding: 0 25px;
+    height: 43px;
+    background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
+    font-size: 12px;
+  }
+}
 .footer {
   width: 100%;
   padding-top: 100px;
@@ -160,6 +204,76 @@ nav button {
   margin-top: 100px;
 }
 
+@media (max-width: 1200px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer .wrapper .descriptionContainer {
+    width: 30%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .footer .wrapper .descriptionContainer .footerLogo {
+    width: 100px;
+    height: 70px;
+    margin-bottom: 0px;
+  }
+  .footer .wrapper .descriptionContainer p {
+    font-size: 12px;
+    color: #848484;
+    line-height: 22px;
+    color: black;
+  }
+  .footer .wrapper .descriptionContainer .social img {
+    width: 16px;
+    margin-right: 12px;
+  }
+  .footer .wrapper .linksContainer .quickLinks {
+    flex-direction: column;
+  }
+  .footer .wrapper .linksContainer .quickLinks h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .footer .wrapper .linksContainer .quickLinks .miniLayout ul li {
+    margin-bottom: 12px;
+  }
+  .footer .wrapper .linksContainer .quickLinks .miniLayout ul li .miniLink {
+    font-size: 12px;
+    color: #848484;
+    line-height: 22px;
+    text-decoration: none;
+    color: black;
+  }
+  .footer .wrapper .linksContainer .quickLinks .miniLayout ul li .miniLink:hover {
+    color: #028a0f;
+  }
+  .footer .wrapper .linksContainer .legalLinks {
+    flex-direction: column;
+    align-items: start;
+  }
+  .footer .wrapper .linksContainer .legalLinks h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .footer .wrapper .linksContainer .legalLinks a {
+    font-size: 12px;
+    color: #848484;
+    line-height: 22px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 12px;
+  }
+  .footer .wrapper .linksContainer .legalLinks a:hover {
+    color: #028a0f;
+  }
+  .footer .copyright {
+    margin-top: 50px;
+    font-size: 12px;
+  }
+}
 .header {
   width: 100%;
   height: 700px;
@@ -389,6 +503,9 @@ nav button {
   padding: 0 25px;
   height: 43px;
   background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 22px;
 }
 
 .callBanner {
@@ -436,10 +553,175 @@ nav button {
   padding: 0 25px;
   height: 43px;
   background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 22px;
   background: white;
   color: black;
 }
 
+@media (max-width: 1200px) {
+  .header .headerDescription h1 {
+    font-size: 40px;
+  }
+  .header .headerDescription p {
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 22px;
+  }
+  .shortAboutUs {
+    margin-bottom: 60px;
+    height: 400px;
+  }
+  .shortAboutUs .wrapper .imgWrapper {
+    width: 40%;
+  }
+  .shortAboutUs .wrapper .imgWrapper img {
+    width: 70%;
+  }
+  .shortAboutUs .wrapper .imgWrapper div {
+    width: 70%;
+  }
+  .shortAboutUs .wrapper .descriptionWrapper {
+    width: 50%;
+  }
+  .shortAboutUs .wrapper .descriptionWrapper h2 {
+    font-size: 24px;
+  }
+  .shortAboutUs .wrapper .descriptionWrapper p {
+    font-size: 12px;
+    color: #848484;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .shortOurServices {
+    margin-bottom: 60px;
+  }
+  .shortOurServices h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .shortOurServices .carts .card img {
+    height: 25px;
+    margin-bottom: 20px;
+  }
+  .shortOurServices .carts .card h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .shortOurServices .carts .card p {
+    font-size: 12px;
+    color: #848484;
+    line-height: 22px;
+  }
+  .clientReviews {
+    margin-bottom: 60px;
+  }
+  .clientReviews h2 {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .clientReviews .clientReview {
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+  }
+  .clientReviews .clientReview .clientRevievDescription {
+    font-size: 12px;
+    color: #848484;
+    line-height: 22px;
+    margin-bottom: 50px;
+  }
+  .clientReviews .clientReview .clientInfo img {
+    width: 60px;
+  }
+  .clientReviews .clientReview .clientInfo .userName {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .clientReviews .clientReview .clientInfo .userName h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  .clientReviews .clientReview .clientInfo .userName p {
+    font-size: 12px;
+    color: #848484;
+    line-height: 22px;
+  }
+  .centerForYou {
+    margin-bottom: 60px;
+  }
+  .centerForYou img {
+    width: 50%;
+    height: 50%;
+  }
+  .centerForYou .description {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+  }
+  .centerForYou .description h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .centerForYou .description p {
+    font-size: 12px;
+    color: #848484;
+    line-height: 22px;
+    margin-bottom: 40px;
+  }
+  .centerForYou .description button {
+    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    padding: 0 25px;
+    height: 43px;
+    background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 22px;
+  }
+  .callBanner {
+    margin-bottom: 60px;
+  }
+  .callBanner .description h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .callBanner .description p {
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .callBanner .description button {
+    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    padding: 0 25px;
+    height: 43px;
+    background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 22px;
+    background: white;
+    color: black;
+  }
+}
 .topBanner {
   position: relative;
   width: 100%;
@@ -584,6 +866,67 @@ nav button {
   width: 95%;
 }
 
+@media (max-width: 1200px) {
+  .aboutUs {
+    margin-bottom: 60px;
+  }
+  .aboutUs .mission {
+    width: 90%;
+    margin-bottom: 60px;
+  }
+  .aboutUs .mission .descriptionWrapper h2 {
+    font-size: 24px;
+  }
+  .aboutUs .mission .descriptionWrapper p {
+    font-size: 12px;
+    color: #848484;
+    line-height: 22px;
+  }
+  .aboutUs .mission img {
+    width: 40%;
+  }
+  .aboutUs .history {
+    margin-bottom: 30px;
+  }
+  .aboutUs .history h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .aboutUs .history .historyElments .historyElement .date {
+    line-height: 50px;
+  }
+  .aboutUs .history .historyElments .historyElement .description .title {
+    line-height: 50px;
+  }
+  .aboutUs .history .historyElments .historyElement .description .title h2 {
+    margin-bottom: 0px;
+  }
+  .aboutUs .history .historyElments .historyElement .description .insideDescription .line {
+    height: 150px;
+  }
+  .aboutUs .history .historyElments .historyElement .description .insideDescription p {
+    font-size: 12px;
+    color: #848484;
+    line-height: 22px;
+  }
+  .aboutUs .staff h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .aboutUs .staff .staffMembers .staffMember {
+    width: 48%;
+  }
+  .aboutUs .staff .staffMembers .staffMember .position {
+    font-size: 12px;
+    color: #848484;
+    line-height: 22px;
+  }
+  .aboutUs .staff .staffMembers .staffMember .memberDescription {
+    font-size: 12px;
+    color: #848484;
+    line-height: 22px;
+  }
+}
 .services {
   flex-direction: column;
   width: 90%;
