@@ -6,7 +6,7 @@ const MiniLayout = () => {
       <nav className="miniLayout">
         <ul>
           <li>
-            <NavLink className="miniLink" to="/">
+            <NavLink className="miniLink" to="/senior-care">
               Home
             </NavLink>
           </li>
