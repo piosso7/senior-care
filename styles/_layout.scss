@@ -35,7 +35,4 @@ nav {
   button {
     @include standardElements.button;
   }
-  button:hover {
-    @include standardElements.buttonHover;
-  }
 }

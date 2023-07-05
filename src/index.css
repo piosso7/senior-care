@@ -66,9 +66,6 @@ nav button {
   height: 43px;
   background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
 }
-nav button:hover {
-  background: linear-gradient(135deg, #90d296 0%, #028a0f 100%);
-}
 
 .footer {
   width: 100%;
