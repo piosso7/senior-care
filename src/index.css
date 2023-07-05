@@ -199,9 +199,6 @@ nav button:hover {
   height: 43px;
   background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
 }
-.header .headerDescription button:hover {
-  background: linear-gradient(135deg, #90d296 0%, #028a0f 100%);
-}
 
 .shortAboutUs {
   width: 90%;
