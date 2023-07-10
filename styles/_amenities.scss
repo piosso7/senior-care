@@ -1,4 +1,7 @@
 @use "./standardElements";
+
+// ---------------------INDOOR SECTION---------------------------//
+
 .indoor {
   width: 90%;
   flex-direction: column;
@@ -33,6 +36,9 @@
     }
   }
 }
+
+// ---------------------OUTDOOR SECTION---------------------------//
+
 .outdoor {
   width: 90%;
   flex-direction: column;
@@ -67,6 +73,9 @@
     }
   }
 }
+
+// ---------------------COMMON AREAS SECTION---------------------------//
+
 .commonAreas {
   width: 90%;
   flex-direction: column;
@@ -91,6 +100,9 @@
     @include standardElements.pGray;
   }
 }
+
+// ---------------------ACCESSIBILITY SECTION---------------------------//
+
 .accessibilityFeatures {
   width: 90%;
   margin-bottom: 120px;
@@ -126,6 +138,103 @@
       }
       p {
         @include standardElements.pGray;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  // ---------------------INDOOR SECTION---------------------------//
+
+  .indoor {
+    margin-bottom: 60px;
+    .indoorTitle {
+      @include standardElements.h2Small;
+      margin-bottom: 40px;
+    }
+    .indoorWrapper {
+      flex-direction: column;
+      .frame {
+        align-items: flex-start;
+        width: 90%;
+        margin-bottom: 40px;
+        .frameImg {
+          margin-bottom: 20px;
+        }
+        .frameTitle {
+          @include standardElements.h2Small;
+          margin-bottom: 10px;
+        }
+        .frameText {
+          @include standardElements.pGraySmall;
+        }
+      }
+    }
+  }
+
+  // ---------------------OUTDOOR SECTION---------------------------//
+
+  .outdoor {
+    margin-bottom: 60px;
+    .outdoorTitle {
+      @include standardElements.h2Small;
+      margin-bottom: 40px;
+    }
+    .outdoorWrapper {
+      flex-direction: column;
+      .frame {
+        align-items: flex-start;
+        width: 90%;
+        margin-bottom: 20px;
+        .frameImg {
+          width: 100%;
+          margin-bottom: 40px;
+        }
+        .frameTitle {
+          @include standardElements.h2Small;
+          margin-bottom: 10px;
+        }
+        .frameText {
+          @include standardElements.pGraySmall;
+        }
+      }
+    }
+  }
+
+  // ---------------------COMMON AREAS SECTION---------------------------//
+
+  .commonAreas {
+    margin-bottom: 60px;
+    .commonAreasTitle {
+      @include standardElements.h2Small;
+      margin-bottom: 40px;
+    }
+    .commonAreasText {
+      @include standardElements.pGraySmall;
+    }
+  }
+
+  // ---------------------ACCESSIBILITY SECTION---------------------------//
+
+  .accessibilityFeatures {
+    margin-bottom: 60px;
+    .accessibilityFeaturesTitle {
+      @include standardElements.h2Small;
+      margin-bottom: 20px;
+    }
+    .accessibilityFeaturesWrapper {
+      flex-direction: column;
+      .frame {
+        width: 90%;
+        .frameImg {
+          height: 25px;
+        }
+        h3 {
+          @include standardElements.h3FooterSmall;
+        }
+        p {
+          @include standardElements.pGraySmall;
+        }
       }
     }
   }

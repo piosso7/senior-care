@@ -1,11 +1,16 @@
 @use "./standardElements";
 
+// ---------------------PAYMENT PLANS SECTION---------------------------//
+
 .paymentPlans {
   width: 90%;
   .paymentPlansTitle {
     @include standardElements.h2;
     margin-bottom: 60px;
   }
+
+  // ---------------------SWITCH SECTION---------------------------//
+
   .subscriptionTimeSwitch {
     border: solid 2px black;
     border-radius: 8px;
@@ -63,6 +68,8 @@
       }
     }
   }
+
+  // ---------------------PLANS SECTION---------------------------//
   .plans {
     margin-bottom: 120px;
     width: 90%;
@@ -184,6 +191,9 @@
       display: none;
     }
   }
+
+  // ---------------------INSURANCE SECTION---------------------------//
+
   .insuranceWrapper {
     width: 90%;
     margin-bottom: 120px;
@@ -196,6 +206,9 @@
       text-align: center;
     }
   }
+
+  // ---------------------CALL SECTION---------------------------//
+
   .callBanner {
     position: relative;
     margin-bottom: 120px;
@@ -229,6 +242,175 @@
         @include standardElements.button;
         background: white;
         color: black;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  // ---------------------PAYMENT PLANS SECTION---------------------------//
+
+  .paymentPlans {
+    width: 90%;
+    .paymentPlansTitle {
+      @include standardElements.h2Small;
+      margin-bottom: 60px;
+    }
+
+    // ---------------------SWITCH SECTION---------------------------//
+
+    .subscriptionTimeSwitch {
+      border: solid 2px black;
+      border-radius: 8px;
+      width: 100%;
+      height: 60px;
+      position: relative;
+      margin-bottom: 30px;
+      .backgroundSwitch {
+        position: absolute;
+        border: solid 2px black;
+        border-radius: 5px;
+        height: 100%;
+        width: 45%;
+        background: black;
+        left: -2px;
+        transition: 0.2s;
+      }
+      .backgroundSwitch.yearPlan {
+        width: 55%;
+        left: 45%;
+      }
+      .monthSubscription {
+        font-size: 16px;
+      }
+      .monthSubscription.yearPlan {
+        color: black;
+      }
+      .yearSubscription {
+        font-size: 16px;
+      }
+    }
+
+    // ---------------------PLANS SECTION---------------------------//
+    .plans {
+      margin-bottom: 40px;
+      .plansOn {
+        flex-direction: column;
+        justify-content: space-between;
+        .paymentPlanBanner {
+          width: 70%;
+          padding: 15px 15px;
+          margin-bottom: 30px;
+          .planLevelWrapper {
+            align-items: flex-start;
+            margin-bottom: 10px;
+            min-height: 40px;
+            .classPopular {
+              padding: 5px 15px;
+              font-size: 12px;
+              margin-bottom: 10px;
+            }
+            .nonPopular {
+              display: none;
+            }
+            .level {
+              width: auto;
+              padding: 5px 14px;
+              text-transform: uppercase;
+              color: black;
+              background-color: #f1f1f1;
+              border-radius: 5px;
+              font-size: 15px;
+            }
+          }
+          .priceWrapper {
+            height: 100px;
+            margin-bottom: 20px;
+            .price {
+              font-size: 36px;
+            }
+            .description {
+              font-size: 15px;
+              transition: 0.5s;
+            }
+          }
+          .offeringServices {
+            margin-bottom: 20px;
+            .offeringService {
+              img {
+                width: 16px;
+                margin-right: 5px;
+              }
+              p {
+                margin-bottom: 10px;
+                font-size: 12px;
+              }
+            }
+          }
+          .nonPopularButton {
+            width: 100%;
+            color: #fff;
+            background-color: black;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+          }
+          .classPopularButton {
+            width: 100%;
+            color: black;
+            background-color: #f9d783;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-weight: 900;
+            cursor: pointer;
+          }
+          .noCard {
+            color: black;
+            font-size: 12px;
+            margin-bottom: 50px;
+          }
+        }
+        .paymentPlanBanner:hover {
+          transform: scale(1.02);
+          background-color: standardElements.$colorGreen;
+        }
+      }
+    }
+
+    // ---------------------INSURANCE SECTION---------------------------//
+
+    .insuranceWrapper {
+      margin-bottom: 60px;
+      .title {
+        @include standardElements.h2Small;
+      }
+      .description {
+        @include standardElements.pGraySmall;
+      }
+    }
+
+    // ---------------------CALL SECTION---------------------------//
+
+    .callBanner {
+      margin-bottom: 60px;
+      .description {
+        h2 {
+          @include standardElements.h2Small;
+          color: white;
+          margin-bottom: 30px;
+        }
+        p {
+          @include standardElements.pWhiteSmall;
+          margin-bottom: 30px;
+        }
+        button {
+          @include standardElements.button;
+          font-size: 12px;
+          background: white;
+          color: black;
+        }
       }
     }
   }

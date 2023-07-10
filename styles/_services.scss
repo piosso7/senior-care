@@ -1,4 +1,7 @@
 @use "./standardElements";
+
+// ---------------------SERVICES SECTION---------------------------//
+
 .services {
   flex-direction: column;
   width: 90%;
@@ -52,6 +55,9 @@
     }
   }
 }
+
+// ---------------------DIETARY SECTION---------------------------//
+
 .dietaryServices {
   width: 90%;
   flex-direction: column;
@@ -88,6 +94,9 @@
     }
   }
 }
+
+// ---------------------ACTIVITIES SECTION---------------------------//
+
 .socialActivities {
   width: 90%;
   flex-direction: column;
@@ -122,6 +131,111 @@
       .frameText {
         @include standardElements.pGray;
         margin: 0px 24px 46px 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  // ---------------------SERVICES SECTION---------------------------//
+
+  .services {
+    .service {
+      margin-bottom: 60px;
+      .details {
+        margin-right: 20px;
+        .title {
+          margin-bottom: 20px;
+          h2 {
+            @include standardElements.h2Small;
+            margin-bottom: 20px;
+          }
+          p {
+            @include standardElements.pGraySmall;
+          }
+        }
+        .description {
+          h3 {
+            @include standardElements.h3FooterSmall;
+            margin-bottom: 20px;
+          }
+          p {
+            @include standardElements.pGraySmall;
+          }
+        }
+      }
+      .offers {
+        h3 {
+          @include standardElements.h3FooterSmall;
+        }
+        p {
+          @include standardElements.pGraySmall;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  // ---------------------DIETARY SECTION---------------------------//
+
+  .dietaryServices {
+    margin-bottom: 60px;
+    .dietaryServicesTitle {
+      @include standardElements.h2Small;
+      margin-bottom: 30px;
+    }
+    .dietaryServicesWrapper {
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-between;
+      .frame {
+        width: 90%;
+        margin-bottom: 20px;
+        .frameImg {
+          width: 100%;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          margin-bottom: 30px;
+        }
+        .frameTitle {
+          @include standardElements.h2Small;
+          margin: 0px 24px 20px 24px;
+        }
+        .frameText {
+          @include standardElements.pGraySmall;
+          margin: 0px 24px 20px 24px;
+        }
+      }
+    }
+  }
+
+  // ---------------------ACTIVITIES SECTION---------------------------//
+
+  .socialActivities {
+    margin-bottom: 60px;
+    .socialActivitiesTitle {
+      @include standardElements.h2Small;
+      margin-bottom: 30px;
+    }
+    .socialActivitiesWrapper {
+      flex-direction: column;
+      width: 100%;
+      .frame {
+        width: 90%;
+        .frameImg {
+          width: 100%;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          margin-bottom: 20px;
+        }
+        .frameTitle {
+          @include standardElements.h2Small;
+          margin: 0px 24px 20px 24px;
+        }
+        .frameText {
+          @include standardElements.pGraySmall;
+          margin: 0px 24px 46px 24px;
+        }
       }
     }
   }
