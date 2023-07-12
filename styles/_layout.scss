@@ -1,6 +1,6 @@
 @use "./standardElements";
 
-nav {
+.menu {
   overflow: hidden;
   width: 90%;
   height: 100px;
@@ -36,10 +36,14 @@ nav {
   button {
     @include standardElements.button;
   }
+  .bars {
+    display: none;
+    color: black;
+  }
 }
 
 @media (max-width: 1200px) {
-  nav {
+  .menu {
     width: 100%;
     img {
       width: 60px;
@@ -69,6 +73,92 @@ nav {
     button {
       @include standardElements.button;
       font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    overflow: hidden;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    align-items: flex-start;
+    z-index: 10;
+    transition: 1s;
+    img {
+      width: 25%;
+    }
+    ul {
+      display: none;
+      position: absolute;
+      top: 30%;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: space-around;
+      align-items: center;
+      transition: 1s;
+      li {
+        list-style: none;
+        margin: 10px 5px;
+        .link {
+          font-size: 24px;
+          text-decoration: none;
+          color: black;
+        }
+
+        .link.active {
+          @include standardElements.colorHoverGreen;
+        }
+        .link:hover {
+          @include standardElements.colorHoverGreen;
+        }
+      }
+    }
+    button {
+      @include standardElements.button;
+      display: none;
+    }
+    .bars {
+      display: block;
+      color: black;
+      width: 20%;
+      translate: 1s;
+    }
+  }
+  .menu.active {
+    height: 100vh;
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        list-style: none;
+        margin: 10px 5px;
+        .link {
+          font-size: 24px;
+          text-decoration: none;
+          color: black;
+        }
+        .link.active {
+          @include standardElements.colorHoverGreen;
+        }
+        .link:hover {
+          @include standardElements.colorHoverGreen;
+        }
+      }
+    }
+    button {
+      @include standardElements.button;
+      display: none;
+    }
+    .bars {
+      display: block;
+      color: black;
+      width: 20%;
     }
   }
 }

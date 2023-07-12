@@ -20,7 +20,7 @@ body div {
   align-items: center;
 }
 
-nav {
+.menu {
   overflow: hidden;
   width: 90%;
   height: 100px;
@@ -29,32 +29,32 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-nav img {
+.menu img {
   width: 138px;
 }
-nav ul {
+.menu ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 50%;
 }
-nav ul li {
+.menu ul li {
   list-style: none;
 }
-nav ul li .link {
+.menu ul li .link {
   font-size: 16px;
   text-decoration: none;
   color: black;
   margin: 0 5px;
 }
-nav ul li .link.active {
+.menu ul li .link.active {
   color: #028a0f;
 }
-nav ul li .link:hover {
+.menu ul li .link:hover {
   color: #028a0f;
 }
-nav button {
+.menu button {
   font-size: 16px;
   color: #ffffff;
   display: flex;
@@ -67,37 +67,41 @@ nav button {
   height: 43px;
   background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
 }
+.menu .bars {
+  display: none;
+  color: black;
+}
 
 @media (max-width: 1200px) {
-  nav {
+  .menu {
     width: 100%;
   }
-  nav img {
+  .menu img {
     width: 60px;
   }
-  nav ul {
+  .menu ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 70%;
   }
-  nav ul li {
+  .menu ul li {
     list-style: none;
   }
-  nav ul li .link {
+  .menu ul li .link {
     font-size: 12px;
     text-decoration: none;
     color: black;
     margin: 0 5px;
   }
-  nav ul li .link.active {
+  .menu ul li .link.active {
     color: #028a0f;
   }
-  nav ul li .link:hover {
+  .menu ul li .link:hover {
     color: #028a0f;
   }
-  nav button {
+  .menu button {
     font-size: 16px;
     color: #ffffff;
     display: flex;
@@ -110,6 +114,110 @@ nav button {
     height: 43px;
     background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
     font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .menu {
+    overflow: hidden;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    align-items: flex-start;
+    z-index: 10;
+    transition: 1s;
+  }
+  .menu img {
+    width: 25%;
+  }
+  .menu ul {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+    transition: 1s;
+  }
+  .menu ul li {
+    list-style: none;
+    margin: 10px 5px;
+  }
+  .menu ul li .link {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+  }
+  .menu ul li .link.active {
+    color: #028a0f;
+  }
+  .menu ul li .link:hover {
+    color: #028a0f;
+  }
+  .menu button {
+    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    padding: 0 25px;
+    height: 43px;
+    background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
+    display: none;
+  }
+  .menu .bars {
+    display: block;
+    color: black;
+    width: 20%;
+    translate: 1s;
+  }
+  .menu.active {
+    height: 100vh;
+  }
+  .menu.active ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu.active ul li {
+    list-style: none;
+    margin: 10px 5px;
+  }
+  .menu.active ul li .link {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+  }
+  .menu.active ul li .link.active {
+    color: #028a0f;
+  }
+  .menu.active ul li .link:hover {
+    color: #028a0f;
+  }
+  .menu.active button {
+    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    padding: 0 25px;
+    height: 43px;
+    background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
+    display: none;
+  }
+  .menu.active .bars {
+    display: block;
+    color: black;
+    width: 20%;
   }
 }
 .footer {
@@ -770,6 +878,9 @@ nav button {
   }
 }
 @media (max-width: 600px) {
+  .header {
+    margin-top: 60px;
+  }
   .shortAboutUs {
     height: auto;
   }
@@ -822,6 +933,7 @@ nav button {
 
 @media (max-width: 600px) {
   .topBanner {
+    margin-top: 60px;
     margin-bottom: 60px;
   }
   .topBanner h2 {

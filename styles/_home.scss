@@ -405,7 +405,9 @@
 
 @media (max-width: 600px) {
   // ---------------------ABOUT US SECTION---------------------------//
-
+  .header {
+    margin-top: 60px;
+  }
   .shortAboutUs {
     height: auto;
     .wrapper {
