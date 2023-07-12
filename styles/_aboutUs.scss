@@ -206,3 +206,71 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .aboutUs {
+    // ---------------------MISSION SECTION---------------------------//
+
+    .mission {
+      flex-direction: column;
+      margin-bottom: 30px;
+      .descriptionWrapper {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+
+    // ---------------------HISTORY SECTION---------------------------//
+
+    .history {
+      margin-bottom: 60px;
+      width: 90%;
+      h2 {
+        margin-bottom: 30px;
+      }
+      .historyElments {
+        .historyElement {
+          min-height: 120px;
+          .date {
+            min-width: 5%;
+          }
+          .description {
+            width: 95%;
+            .title {
+              margin-left: 60px;
+              .dot {
+                display: none;
+              }
+              h2 {
+                @include standardElements.h2Small;
+              }
+            }
+            .insideDescription {
+              height: 100%;
+              .line {
+                height: 200px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // ---------------------STAFF SECTION---------------------------//
+
+    .staff {
+      h2 {
+        margin-bottom: 30px;
+      }
+      .staffMembers {
+        flex-direction: column;
+        .staffMember {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -240,3 +240,57 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  // ---------------------SERVICES SECTION---------------------------//
+
+  .services {
+    width: 90%;
+    .service {
+      width: 100%;
+      flex-direction: column;
+      margin-bottom: 40px;
+      .details {
+        width: 100%;
+        margin-right: 0px;
+        .title {
+          margin-bottom: 20px;
+        }
+        .description {
+          margin-bottom: 30px;
+        }
+      }
+      .offers {
+        width: 100%;
+      }
+    }
+  }
+
+  // ---------------------DIETARY SECTION---------------------------//
+
+  .dietaryServices {
+    width: 90%;
+    margin-bottom: 30px;
+    .dietaryServicesWrapper {
+      flex-direction: column;
+      .frame {
+        width: 100%;
+      }
+    }
+  }
+
+  // ---------------------ACTIVITIES SECTION---------------------------//
+
+  .socialActivities {
+    margin-bottom: 30px;
+    .socialActivitiesTitle {
+      margin-bottom: 30px;
+    }
+    .socialActivitiesWrapper {
+      flex-direction: column;
+      .frame {
+        width: 100%;
+      }
+    }
+  }
+}

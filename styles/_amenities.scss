@@ -239,3 +239,78 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  // ---------------------INDOOR SECTION---------------------------//
+
+  .indoor {
+    margin-bottom: 30px;
+    .indoorTitle {
+      margin-bottom: 20px;
+    }
+    .indoorWrapper {
+      .frame {
+        margin-bottom: 20px;
+        .frameImg {
+          margin-bottom: 10px;
+        }
+        .frameTitle {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  // ---------------------OUTDOOR SECTION---------------------------//
+
+  .outdoor {
+    margin-bottom: 30px;
+    .outdoorTitle {
+      margin-bottom: 20px;
+    }
+    .outdoorWrapper {
+      .frame {
+        margin-bottom: 20px;
+        .frameImg {
+          margin-bottom: 40px;
+        }
+        .frameTitle {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  // ---------------------COMMON AREAS SECTION---------------------------//
+
+  .commonAreas {
+    margin-bottom: 30px;
+    .commonAreasTitle {
+      margin-bottom: 20px;
+    }
+  }
+
+  // ---------------------ACCESSIBILITY SECTION---------------------------//
+
+  .accessibilityFeatures {
+    margin-bottom: 30px;
+    .accessibilityFeaturesTitle {
+      margin-bottom: 20px;
+    }
+    .accessibilityFeaturesWrapper {
+      flex-direction: column;
+      .frame {
+        width: 100%;
+        .frameImg {
+          height: 25px;
+        }
+        h3 {
+          @include standardElements.h3FooterSmall;
+        }
+        p {
+          @include standardElements.pGraySmall;
+        }
+      }
+    }
+  }
+}

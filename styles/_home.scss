@@ -252,6 +252,7 @@
   // ---------------------HEADER SECTION---------------------------//
 
   .header {
+    margin-bottom: 60px;
     .headerDescription {
       h1 {
         @include standardElements.h1Small;
@@ -398,6 +399,59 @@
         background: white;
         color: black;
       }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  // ---------------------ABOUT US SECTION---------------------------//
+
+  .shortAboutUs {
+    height: auto;
+    .wrapper {
+      .imgWrapper {
+        display: none;
+      }
+      .descriptionWrapper {
+        width: 100%;
+      }
+    }
+  }
+
+  // ---------------------OUR SERVICES SECTION---------------------------//
+
+  .shortOurServices {
+    .carts {
+      flex-direction: column;
+      .card {
+        width: 100%;
+      }
+    }
+  }
+
+  // ---------------------CENTER FOR YOU SECTION---------------------------//
+
+  .centerForYou {
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
+    .description {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  // ---------------------CALL BANNER---------------------------//
+
+  .callBanner {
+    .description {
+      width: 80%;
+    }
+    .paperAeroplane {
+      height: 60px;
+      bottom: -10px;
+      right: 15px;
     }
   }
 }

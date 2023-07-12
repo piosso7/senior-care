@@ -14,3 +14,12 @@
     bottom: 15%;
   }
 }
+
+@media (max-width: 600px) {
+  .topBanner {
+    margin-bottom: 60px;
+    h2 {
+      @include standardElements.h2Small;
+    }
+  }
+}

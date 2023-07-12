@@ -17,7 +17,7 @@
 
     // ---------------------DESCRIPTION SECTION---------------------------//
     .descriptionContainer {
-      width: 30%;
+      width: 50%;
       flex-direction: column;
       align-items: start;
       justify-content: space-between;
@@ -43,7 +43,7 @@
 
     // ---------------------LINKS SECTION---------------------------//
     .linksContainer {
-      width: 30%;
+      width: 45%;
       flex-direction: row;
       align-items: start;
       .quickLinks {
@@ -171,6 +171,57 @@
     .copyright {
       margin-top: 50px;
       font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .wrapper {
+      flex-direction: column;
+      width: 100%;
+      // ---------------------DESCRIPTION SECTION---------------------------//
+      .descriptionContainer {
+        margin-bottom: 30px;
+        width: 90%;
+        .footerLogo {
+          width: 100px;
+          margin-bottom: 10px;
+        }
+      }
+
+      // ---------------------LINKS SECTION---------------------------//
+      .linksContainer {
+        width: 100%;
+        justify-content: space-around;
+        .quickLinks {
+          width: 50%;
+          align-items: center;
+          .miniLayout {
+            ul {
+              align-items: center;
+              li {
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+        .legalLinks {
+          flex-direction: column;
+          align-items: center;
+          width: 50%;
+        }
+      }
+    }
+
+    // ---------------------COPYRIGHT SECTION---------------------------//
+    .copyright {
+      margin-top: 20px;
+      width: 90%;
+      text-align: center;
     }
   }
 }

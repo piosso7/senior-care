@@ -415,3 +415,40 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  // ---------------------PAYMENT PLANS SECTION---------------------------//
+
+  .paymentPlans {
+    width: 90%;
+
+    // ---------------------PLANS SECTION---------------------------//
+    .plans {
+      .plansOn {
+        .paymentPlanBanner {
+          width: 100%;
+        }
+      }
+    }
+
+    // ---------------------CALL SECTION---------------------------//
+
+    .callBanner {
+      margin-bottom: 60px;
+      .description {
+        width: 80%;
+        button {
+          @include standardElements.button;
+          font-size: 12px;
+          background: white;
+          color: black;
+        }
+      }
+      .paperAeroplane {
+        height: 60px;
+        bottom: -10px;
+        right: 15px;
+      }
+    }
+  }
+}

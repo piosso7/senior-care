@@ -21,6 +21,7 @@ body div {
 }
 
 nav {
+  overflow: hidden;
   width: 90%;
   height: 100px;
   display: flex;
@@ -128,7 +129,7 @@ nav button {
   justify-content: space-between;
 }
 .footer .wrapper .descriptionContainer {
-  width: 30%;
+  width: 50%;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
@@ -152,7 +153,7 @@ nav button {
   margin-right: 24px;
 }
 .footer .wrapper .linksContainer {
-  width: 30%;
+  width: 45%;
   flex-direction: row;
   align-items: start;
 }
@@ -272,6 +273,49 @@ nav button {
   .footer .copyright {
     margin-top: 50px;
     font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer .wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer .wrapper .descriptionContainer {
+    margin-bottom: 30px;
+    width: 90%;
+  }
+  .footer .wrapper .descriptionContainer .footerLogo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  .footer .wrapper .linksContainer {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .footer .wrapper .linksContainer .quickLinks {
+    width: 50%;
+    align-items: center;
+  }
+  .footer .wrapper .linksContainer .quickLinks .miniLayout ul {
+    align-items: center;
+  }
+  .footer .wrapper .linksContainer .quickLinks .miniLayout ul li {
+    margin-bottom: 5px;
+  }
+  .footer .wrapper .linksContainer .legalLinks {
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  .footer .copyright {
+    margin-top: 20px;
+    width: 90%;
+    text-align: center;
   }
 }
 .header {
@@ -561,6 +605,9 @@ nav button {
 }
 
 @media (max-width: 1200px) {
+  .header {
+    margin-bottom: 60px;
+  }
   .header .headerDescription h1 {
     font-size: 40px;
   }
@@ -722,6 +769,41 @@ nav button {
     color: black;
   }
 }
+@media (max-width: 600px) {
+  .shortAboutUs {
+    height: auto;
+  }
+  .shortAboutUs .wrapper .imgWrapper {
+    display: none;
+  }
+  .shortAboutUs .wrapper .descriptionWrapper {
+    width: 100%;
+  }
+  .shortOurServices .carts {
+    flex-direction: column;
+  }
+  .shortOurServices .carts .card {
+    width: 100%;
+  }
+  .centerForYou {
+    flex-direction: column;
+  }
+  .centerForYou img {
+    width: 100%;
+  }
+  .centerForYou .description {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .callBanner .description {
+    width: 80%;
+  }
+  .callBanner .paperAeroplane {
+    height: 60px;
+    bottom: -10px;
+    right: 15px;
+  }
+}
 .topBanner {
   position: relative;
   width: 100%;
@@ -738,6 +820,14 @@ nav button {
   bottom: 15%;
 }
 
+@media (max-width: 600px) {
+  .topBanner {
+    margin-bottom: 60px;
+  }
+  .topBanner h2 {
+    font-size: 24px;
+  }
+}
 .aboutUs {
   margin-bottom: 120px;
 }
@@ -925,6 +1015,59 @@ nav button {
     font-size: 12px;
     color: #848484;
     line-height: 22px;
+  }
+}
+@media (max-width: 1200px) {
+  .aboutUs .mission {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .aboutUs .mission .descriptionWrapper {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .aboutUs .mission img {
+    width: 100%;
+  }
+  .aboutUs .history {
+    margin-bottom: 60px;
+    width: 90%;
+  }
+  .aboutUs .history h2 {
+    margin-bottom: 30px;
+  }
+  .aboutUs .history .historyElments .historyElement {
+    min-height: 120px;
+  }
+  .aboutUs .history .historyElments .historyElement .date {
+    min-width: 5%;
+  }
+  .aboutUs .history .historyElments .historyElement .description {
+    width: 95%;
+  }
+  .aboutUs .history .historyElments .historyElement .description .title {
+    margin-left: 60px;
+  }
+  .aboutUs .history .historyElments .historyElement .description .title .dot {
+    display: none;
+  }
+  .aboutUs .history .historyElments .historyElement .description .title h2 {
+    font-size: 24px;
+  }
+  .aboutUs .history .historyElments .historyElement .description .insideDescription {
+    height: 100%;
+  }
+  .aboutUs .history .historyElments .historyElement .description .insideDescription .line {
+    height: 200px;
+  }
+  .aboutUs .staff h2 {
+    margin-bottom: 30px;
+  }
+  .aboutUs .staff .staffMembers {
+    flex-direction: column;
+  }
+  .aboutUs .staff .staffMembers .staffMember {
+    width: 100%;
   }
 }
 .services {
@@ -1169,6 +1312,51 @@ nav button {
     margin: 0px 24px 46px 24px;
   }
 }
+@media (max-width: 600px) {
+  .services {
+    width: 90%;
+  }
+  .services .service {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .services .service .details {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .services .service .details .title {
+    margin-bottom: 20px;
+  }
+  .services .service .details .description {
+    margin-bottom: 30px;
+  }
+  .services .service .offers {
+    width: 100%;
+  }
+  .dietaryServices {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .dietaryServices .dietaryServicesWrapper {
+    flex-direction: column;
+  }
+  .dietaryServices .dietaryServicesWrapper .frame {
+    width: 100%;
+  }
+  .socialActivities {
+    margin-bottom: 30px;
+  }
+  .socialActivities .socialActivitiesTitle {
+    margin-bottom: 30px;
+  }
+  .socialActivities .socialActivitiesWrapper {
+    flex-direction: column;
+  }
+  .socialActivities .socialActivitiesWrapper .frame {
+    width: 100%;
+  }
+}
 .indoor {
   width: 90%;
   flex-direction: column;
@@ -1393,6 +1581,68 @@ nav button {
   }
   .accessibilityFeatures .accessibilityFeaturesWrapper .frame {
     width: 90%;
+  }
+  .accessibilityFeatures .accessibilityFeaturesWrapper .frame .frameImg {
+    height: 25px;
+  }
+  .accessibilityFeatures .accessibilityFeaturesWrapper .frame h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .accessibilityFeatures .accessibilityFeaturesWrapper .frame p {
+    font-size: 12px;
+    color: #848484;
+    line-height: 22px;
+  }
+}
+@media (max-width: 600px) {
+  .indoor {
+    margin-bottom: 30px;
+  }
+  .indoor .indoorTitle {
+    margin-bottom: 20px;
+  }
+  .indoor .indoorWrapper .frame {
+    margin-bottom: 20px;
+  }
+  .indoor .indoorWrapper .frame .frameImg {
+    margin-bottom: 10px;
+  }
+  .indoor .indoorWrapper .frame .frameTitle {
+    margin-bottom: 10px;
+  }
+  .outdoor {
+    margin-bottom: 30px;
+  }
+  .outdoor .outdoorTitle {
+    margin-bottom: 20px;
+  }
+  .outdoor .outdoorWrapper .frame {
+    margin-bottom: 20px;
+  }
+  .outdoor .outdoorWrapper .frame .frameImg {
+    margin-bottom: 40px;
+  }
+  .outdoor .outdoorWrapper .frame .frameTitle {
+    margin-bottom: 10px;
+  }
+  .commonAreas {
+    margin-bottom: 30px;
+  }
+  .commonAreas .commonAreasTitle {
+    margin-bottom: 20px;
+  }
+  .accessibilityFeatures {
+    margin-bottom: 30px;
+  }
+  .accessibilityFeatures .accessibilityFeaturesTitle {
+    margin-bottom: 20px;
+  }
+  .accessibilityFeatures .accessibilityFeaturesWrapper {
+    flex-direction: column;
+  }
+  .accessibilityFeatures .accessibilityFeaturesWrapper .frame {
+    width: 100%;
   }
   .accessibilityFeatures .accessibilityFeaturesWrapper .frame .frameImg {
     height: 25px;
@@ -1818,5 +2068,40 @@ nav button {
     font-size: 12px;
     background: white;
     color: black;
+  }
+}
+@media (max-width: 1200px) {
+  .paymentPlans {
+    width: 90%;
+  }
+  .paymentPlans .plans .plansOn .paymentPlanBanner {
+    width: 100%;
+  }
+  .paymentPlans .callBanner {
+    margin-bottom: 60px;
+  }
+  .paymentPlans .callBanner .description {
+    width: 80%;
+  }
+  .paymentPlans .callBanner .description button {
+    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    padding: 0 25px;
+    height: 43px;
+    background: linear-gradient(135deg, #028a0f 0%, #90d296 100%);
+    font-size: 12px;
+    background: white;
+    color: black;
+  }
+  .paymentPlans .callBanner .paperAeroplane {
+    height: 60px;
+    bottom: -10px;
+    right: 15px;
   }
 }/*# sourceMappingURL=index.css.map */
