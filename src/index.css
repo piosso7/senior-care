@@ -129,7 +129,8 @@ body div {
     transition: 1s;
   }
   .menu img {
-    width: 25%;
+    margin-left: 20px;
+    width: 120px;
   }
   .menu ul {
     display: none;

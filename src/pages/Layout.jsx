@@ -1,5 +1,7 @@
 import { Outlet, NavLink } from "react-router-dom";
 import { useState } from "react";
+
+//Burger menu icons
 import Icon from "@mdi/react";
 import { mdiMenu, mdiClose } from "@mdi/js";
 
@@ -13,7 +15,9 @@ const Layout = () => {
   return (
     <>
       <nav className={isActive ? "menu active" : "menu"}>
-        <img src={Logo} alt="Logo"></img>
+        <a href="http://piosso7.github.io/senior-care">
+          <img src={Logo} alt="Logo"></img>
+        </a>
         <ul>
           <li>
             <NavLink onClick={handleClick} className="link" to="/senior-care">
