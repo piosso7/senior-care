@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/senior-care/static/css/main.1e3fa5ae.css",
-    "main.js": "/senior-care/static/js/main.2fa1e46a.js",
+    "main.css": "/senior-care/static/css/main.3d326336.css",
+    "main.js": "/senior-care/static/js/main.34ca7c37.js",
     "static/media/homeBaner.png": "/senior-care/static/media/homeBaner.50f6acc535d344c64671.png",
     "static/media/outdoor2.png": "/senior-care/static/media/outdoor2.3de2fd8a172fac07e377.png",
     "static/media/aboutUsTB.png": "/senior-care/static/media/aboutUsTB.59c53dd69709881ab52b.png",
@@ -33,26 +33,26 @@
     "static/media/avatar1.png": "/senior-care/static/media/avatar1.2fc806d2dfcc447ad640.png",
     "static/media/clientAvatar3.png": "/senior-care/static/media/clientAvatar3.0c10739c5786ded13a41.png",
     "static/media/clientAvatar2.png": "/senior-care/static/media/clientAvatar2.ba461c5f23aceaddfc1f.png",
-    "static/media/paperAeroplane.svg": "/senior-care/static/media/paperAeroplane.3e3947ad70d40b8f394c04d595653c7c.svg",
-    "static/media/LogoCareHome.svg": "/senior-care/static/media/LogoCareHome.4423e79a6911560079f02cf796f96202.svg",
-    "static/media/osNursing.svg": "/senior-care/static/media/osNursing.80cd59470d6a56ea84032b803c22cef3.svg",
-    "static/media/osStaff.svg": "/senior-care/static/media/osStaff.31af1725fdcc43ddae6f904d66507e92.svg",
-    "static/media/osNutrition.svg": "/senior-care/static/media/osNutrition.b2de4f2b7fa4be0cbc4213b8142026a4.svg",
-    "static/media/osCare.svg": "/senior-care/static/media/osCare.7974bc26c93b291fee9d26855c34a295.svg",
-    "static/media/ilogo.svg": "/senior-care/static/media/ilogo.45160cc6311799871c3b5b5646a4f586.svg",
-    "static/media/inlogo.svg": "/senior-care/static/media/inlogo.99231eae0cb84c5930ce2ef538b04c97.svg",
-    "static/media/tlogo.svg": "/senior-care/static/media/tlogo.c83184e250bd8862f8f0c41d0f6d6264.svg",
-    "static/media/unCheck.svg": "/senior-care/static/media/unCheck.bff69267a30e30d6c5fda4a526639141.svg",
-    "static/media/check.svg": "/senior-care/static/media/check.7ec9a7123e242c925b5e517cf15ac0a1.svg",
+    "static/media/paperAeroplane.svg": "/senior-care/static/media/paperAeroplane.484f9b8069e3aa3e073482b573bc4b55.svg",
+    "static/media/LogoCareHome.svg": "/senior-care/static/media/LogoCareHome.1e41ffdd28d51586af18a6581af81358.svg",
+    "static/media/osNursing.svg": "/senior-care/static/media/osNursing.b78b4465c0cff17fcd1474effdc5360d.svg",
+    "static/media/osStaff.svg": "/senior-care/static/media/osStaff.c641a5f6ecdee7353e367c5565ddef5b.svg",
+    "static/media/osNutrition.svg": "/senior-care/static/media/osNutrition.725149f63c0fba38bafa57cdde45366c.svg",
+    "static/media/osCare.svg": "/senior-care/static/media/osCare.4a975f1cd321ee0d0e6f11d367511e3a.svg",
+    "static/media/ilogo.svg": "/senior-care/static/media/ilogo.e4d756c84dbd38b02f8e25c0f11d2680.svg",
+    "static/media/inlogo.svg": "/senior-care/static/media/inlogo.62ab370b8c9c0230af4545c6c210ace1.svg",
+    "static/media/tlogo.svg": "/senior-care/static/media/tlogo.7144e1789e5d6657f86027da0ecf5117.svg",
+    "static/media/unCheck.svg": "/senior-care/static/media/unCheck.795d6e8bc624b481a9a4c378d51b9d39.svg",
+    "static/media/check.svg": "/senior-care/static/media/check.624c67ae5a99a7dcb4aad2f9a2e76656.svg",
     "index.html": "/senior-care/index.html",
-    "static/media/checked.svg": "/senior-care/static/media/checked.a1e6fe0793ed24c46868f0fec1d239a0.svg",
-    "static/media/historyDot.svg": "/senior-care/static/media/historyDot.df4ac6f6ed3221cfdf54b805428775ac.svg",
-    "static/media/fblogo.svg": "/senior-care/static/media/fblogo.fa2067430a329519be40da44756df493.svg",
-    "main.1e3fa5ae.css.map": "/senior-care/static/css/main.1e3fa5ae.css.map",
-    "main.2fa1e46a.js.map": "/senior-care/static/js/main.2fa1e46a.js.map"
+    "static/media/checked.svg": "/senior-care/static/media/checked.33076910aa95fd7b18c84dbcf7daf03a.svg",
+    "static/media/historyDot.svg": "/senior-care/static/media/historyDot.5316c69bc47d368dfe0a0ae7c47aac83.svg",
+    "static/media/fblogo.svg": "/senior-care/static/media/fblogo.bfe1fc1d6799923932b76241fa809152.svg",
+    "main.3d326336.css.map": "/senior-care/static/css/main.3d326336.css.map",
+    "main.34ca7c37.js.map": "/senior-care/static/js/main.34ca7c37.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e3fa5ae.css",
-    "static/js/main.2fa1e46a.js"
+    "static/css/main.3d326336.css",
+    "static/js/main.34ca7c37.js"
   ]
 }
