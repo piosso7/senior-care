@@ -60,6 +60,7 @@
             width: 100%;
             flex-direction: column;
             align-items: start;
+            list-style-type: none;
             li {
               margin-bottom: 24px;
               .miniLink {
@@ -202,9 +203,9 @@
           align-items: center;
           .miniLayout {
             ul {
-              align-items: center;
+              text-align: center;
               li {
-                margin-bottom: 5px;
+                margin-bottom: 12px;
               }
             }
           }
