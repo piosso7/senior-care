@@ -1,11 +1,16 @@
 import CheckedIco from "../pictures/home/checked.svg";
 import homeAboutUs from "../pictures/home/homeAboutUs.png";
 
+import Slider from "react-animated-slider";
+import "react-animated-slider/build/horizontal.css";
+
 import osCare from "../pictures/home/osCare.svg";
 import osNutrition from "../pictures/home/osNutrition.svg";
 import osNursing from "../pictures/home/osNursing.svg";
 import osStaff from "../pictures/home/osStaff.svg";
 import clientAvatar1 from "../pictures/home/clientAvatar1.png";
+import clientAvatar2 from "../pictures/home/clientAvatar2.png";
+import clientAvatar3 from "../pictures/home/clientAvatar3.png";
 
 import centerForYou from "../pictures/home/centerForYou.png";
 import paperAeroplane from "../pictures/home/paperAeroplane.svg";
@@ -31,21 +36,31 @@ function OurServicesCard(props) {
   );
 }
 
-//Single client review function
-function ClientReview(props) {
-  return (
-    <div className="clientReview">
-      <p className="clientRevievDescription">{props.description}</p>
-      <div className="clientInfo">
-        <img src={props.avatar} alt="Client Avatar" />
-        <div className="userName">
-          <h3>{props.name}</h3>
-          <p>{props.company}</p>
-        </div>
-      </div>
-    </div>
-  );
-}
+// Slides
+
+const slides = [
+  {
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Amet sed tellus elementum mauris. Libero maecenas eget tellus morbi diam enim euismod egestas. Adipiscing fringilla quis justo adipiscing eget aenean sollicitudin. Nibh ut sed sodales magna risus tellus. Nulla ut arcu ac justo blandit tincidunt ante. Tincidunt libero urna ut aliquet vitae nunc quisque sapien cursus.",
+    avatar: clientAvatar1,
+    name: "James Smith",
+    company: "ABC Softwares",
+  },
+  {
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Amet sed tellus elementum mauris. Libero maecenas eget tellus morbi diam enim euismod egestas. Adipiscing fringilla quis justo adipiscing eget aenean sollicitudin. Nibh ut sed sodales magna risus tellus. Nulla ut arcu ac justo blandit tincidunt ante. Tincidunt libero urna ut aliquet vitae nunc quisque sapien cursus.",
+    avatar: clientAvatar2,
+    name: "Sam Wilkinson",
+    company: "Medigene",
+  },
+  {
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Amet sed tellus elementum mauris. Libero maecenas eget tellus morbi diam enim euismod egestas. Adipiscing fringilla quis justo adipiscing eget aenean sollicitudin. Nibh ut sed sodales magna risus tellus. Nulla ut arcu ac justo blandit tincidunt ante. Tincidunt libero urna ut aliquet vitae nunc quisque sapien cursus.",
+    avatar: clientAvatar3,
+    name: "Gabriela Castro",
+    company: "OrganicEngine",
+  },
+];
 
 const Home = () => {
   return (
@@ -107,13 +122,22 @@ const Home = () => {
       </section>
       <section className="clientReviews">
         <h2>Client Reviews</h2>
-        <ClientReview
-          description="Lorem ipsum dolor sit amet consectetur. Amet sed tellus elementum mauris. Libero maecenas eget tellus morbi diam enim euismod egestas. Adipiscing fringilla quis justo adipiscing eget aenean sollicitudin. Nibh ut sed sodales magna risus tellus. Nulla ut arcu ac justo blandit tincidunt ante. Tincidunt libero urna ut aliquet vitae nunc quisque sapien cursus."
-          avatar={clientAvatar1}
-          name="James Smith"
-          company="ABC Softwares"
-        />
+        <Slider>
+          {slides.map((slide, index) => (
+            <div key={index} className="clientReview">
+              <p className="clientRevievDescription">{slide.description}</p>
+              <div className="clientInfo">
+                <img src={slide.avatar} alt="Client Avatar" />
+                <div className="userName">
+                  <h3>{slide.name}</h3>
+                  <p>{slide.company}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
       </section>
+
       <section className="centerForYou">
         <div className="description">
           <h2>The Best Eldery Care Center For You</h2>

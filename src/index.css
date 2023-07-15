@@ -282,6 +282,7 @@ body div {
   width: 100%;
   flex-direction: column;
   align-items: start;
+  list-style-type: none;
 }
 .footer .wrapper .linksContainer .quickLinks .miniLayout ul li {
   margin-bottom: 24px;
@@ -410,10 +411,10 @@ body div {
     align-items: center;
   }
   .footer .wrapper .linksContainer .quickLinks .miniLayout ul {
-    align-items: center;
+    text-align: center;
   }
   .footer .wrapper .linksContainer .quickLinks .miniLayout ul li {
-    margin-bottom: 5px;
+    margin-bottom: 12px;
   }
   .footer .wrapper .linksContainer .legalLinks {
     flex-direction: column;
@@ -576,11 +577,12 @@ body div {
 .clientReviews h2 {
   font-size: 48px;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .clientReviews .clientReview {
   flex-direction: column;
   width: 70%;
+  margin-left: 15%;
   text-align: center;
 }
 .clientReviews .clientReview .clientRevievDescription {

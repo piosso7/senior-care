@@ -140,11 +140,13 @@
   h2 {
     @include standardElements.h2;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   .clientReview {
     flex-direction: column;
     width: 70%;
+    margin-left: 15%;
+
     text-align: center;
     .clientRevievDescription {
       @include standardElements.pGray;
