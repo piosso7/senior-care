@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/senior-care/static/css/main.a4b834ab.css",
-    "main.js": "/senior-care/static/js/main.a5a19ad7.js",
+    "main.css": "/senior-care/static/css/main.1e3fa5ae.css",
+    "main.js": "/senior-care/static/js/main.2fa1e46a.js",
     "static/media/homeBaner.png": "/senior-care/static/media/homeBaner.50f6acc535d344c64671.png",
     "static/media/outdoor2.png": "/senior-care/static/media/outdoor2.3de2fd8a172fac07e377.png",
     "static/media/aboutUsTB.png": "/senior-care/static/media/aboutUsTB.59c53dd69709881ab52b.png",
@@ -31,6 +31,8 @@
     "static/media/avatar4.png": "/senior-care/static/media/avatar4.5d9148662fde902ad29a.png",
     "static/media/avatar3.png": "/senior-care/static/media/avatar3.433f5009a414b44fa66f.png",
     "static/media/avatar1.png": "/senior-care/static/media/avatar1.2fc806d2dfcc447ad640.png",
+    "static/media/clientAvatar3.png": "/senior-care/static/media/clientAvatar3.0c10739c5786ded13a41.png",
+    "static/media/clientAvatar2.png": "/senior-care/static/media/clientAvatar2.ba461c5f23aceaddfc1f.png",
     "static/media/paperAeroplane.svg": "/senior-care/static/media/paperAeroplane.3e3947ad70d40b8f394c04d595653c7c.svg",
     "static/media/LogoCareHome.svg": "/senior-care/static/media/LogoCareHome.4423e79a6911560079f02cf796f96202.svg",
     "static/media/osNursing.svg": "/senior-care/static/media/osNursing.80cd59470d6a56ea84032b803c22cef3.svg",
@@ -46,11 +48,11 @@
     "static/media/checked.svg": "/senior-care/static/media/checked.a1e6fe0793ed24c46868f0fec1d239a0.svg",
     "static/media/historyDot.svg": "/senior-care/static/media/historyDot.df4ac6f6ed3221cfdf54b805428775ac.svg",
     "static/media/fblogo.svg": "/senior-care/static/media/fblogo.fa2067430a329519be40da44756df493.svg",
-    "main.a4b834ab.css.map": "/senior-care/static/css/main.a4b834ab.css.map",
-    "main.a5a19ad7.js.map": "/senior-care/static/js/main.a5a19ad7.js.map"
+    "main.1e3fa5ae.css.map": "/senior-care/static/css/main.1e3fa5ae.css.map",
+    "main.2fa1e46a.js.map": "/senior-care/static/js/main.2fa1e46a.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4b834ab.css",
-    "static/js/main.a5a19ad7.js"
+    "static/css/main.1e3fa5ae.css",
+    "static/js/main.2fa1e46a.js"
   ]
 }
